@@ -20,8 +20,23 @@ a {
 a:hover {
     text-decoration: none;
 }
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 p {
