@@ -30,6 +30,15 @@ a:active {
     text-decoration: underline;
 }
 
+#img-link, #img-link img{
+   text-decoration: none !important;
+   border:0px !important;
+   outline:none;
+   border-width: 0px;
+   outline-width:0px;
+   border-bottom: none;
+}
+
 h1 {
     font-size: 1.8em;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
