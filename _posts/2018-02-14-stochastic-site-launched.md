@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "stochastic, Launches Site"
-date: 2018-02-14
+title: "Models, distributions, and inference"
+date: 2018-02-20
 ---
 
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Most posts around here will be about using models, parametric or otherwise, for meaningful inference.
