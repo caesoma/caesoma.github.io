@@ -1,4 +1,8 @@
 body {
+    background-image: url(../images/gp.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 682px 300px;
     margin: 60px auto;
     width: 70%;
 }
@@ -11,9 +15,6 @@ nav ul, footer ul {
 }
 
 nav ul li{
-    background-image: url(../images/gp.jpeg);
-    background-position: top center;
-    background-repeat: no-repeat;
     display: inline;
     margin-right: 20px;
 }
