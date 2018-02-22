@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
     <img src="/images/gp.png" alt="header" style="width:1024px;height:448px;border:0;">
-    background-image: url("../images/gp.jpeg");
+    background-image: url(../images/gp.jpeg);
     background-attachment:fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -15,7 +15,12 @@ nav ul, footer ul {
     font-weight: normal;
 }
 
-nav ul li, footer ul li {
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li {
     display: inline;
     margin-right: 2px;
 }
