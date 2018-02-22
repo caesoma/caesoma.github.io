@@ -1,7 +1,6 @@
 body {
     margin: 60px auto;
     width: 70%;
-    <img src="/images/gp.png" alt="header" style="width:1024px;height:448px;border:0;">
     background-image: url(../images/gp.jpeg);
     background-attachment:fixed;
     background-position: top center;
