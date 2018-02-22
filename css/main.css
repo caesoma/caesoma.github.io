@@ -1,10 +1,10 @@
 body {
-    margin: 60px auto;
-    width: 70%;
     background-image: url(../images/gp.jpeg);
     background-attachment:fixed;
     background-position: top center;
     background-repeat: no-repeat;
+    margin: 60px auto;
+    width: 70%;
 }
 
 nav ul, footer ul {
