@@ -2,7 +2,7 @@ body {
     background-image: url(../images/gp.png);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 1250px 140px;
+    background-size: 1200px 130px;
     margin: 60px auto;
     width: 70%;
 }
@@ -25,9 +25,9 @@ footer ul li {
 }
 
 a {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
   text-decoration: none;
-  color: #999;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  color: #6495ED;
 }
 
 h1 {
