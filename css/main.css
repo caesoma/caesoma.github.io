@@ -56,6 +56,6 @@ ul.posts li {
     list-style: none;
 }
 
-.alignleft {
-   float: left;
+.alignright {
+   float: right;
 }
