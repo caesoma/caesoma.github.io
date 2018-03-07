@@ -9,7 +9,7 @@ title: academic publications
 
 Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R.
 Model-based inference from multiple dose, time course data reveals _Wolbachia_ effects on infection profiles of type 1 dengue virus in _Aedes aegypti_
-2018 _(editorially accepted)_
+2018 _(upcoming)_
 
 Souto-Maior C, Rasmussen DA,  Maciel-De-Freitas R, Gomes MGM.
 A51 Dengue virus multi-strain models as hypotheses for serotype interaction.
