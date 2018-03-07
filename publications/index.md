@@ -1,6 +1,6 @@
 ---
 layout: default
-title: academic publications
+title: publications
 ---
 {{ page.title }}
 ================
