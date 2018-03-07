@@ -8,7 +8,7 @@ title: scientific proposal
 A scientific proposal is not a thing, really, yet, but it will be, maybe.
 It is a sort of research statement, but it is probably broader and evolving, and may become as big as a book, with all the proper references.
 
-### We like deterministic things, but the universe is stochastic
+### _We like deterministic things, but the universe is stochastic_
 
 To paraphrase Daniel Kahneman, unlike the predictable effect of sticking your hand into a live outlet and getting a shock (or in a boolean logic description, a "1"), and then turning of the main switch, doing it again and (provided you did it right) not receiving it ("0"), when you throw a pair of dice a several times you will observe a distribution of outcomes with some being more likely than others -- no finger, no electricity, but just as sure a predictable structure, if not a clearly causal outcome.
 
