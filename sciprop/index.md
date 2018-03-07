@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Scientific proposal
+title: scientific proposal
 ---
 {{ page.title }}
 ===============
