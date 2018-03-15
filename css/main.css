@@ -37,7 +37,7 @@ h1 {
 
 p {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     line-height: 1.4em;
     color: #333;
 }
