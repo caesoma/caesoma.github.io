@@ -21,7 +21,7 @@ A theoretical framework to identify invariant thresholds in infectious disease e
 J Theor Biol. 2016 21;395:97-102. [doi: 10.1016/j.jtbi.2016.01.029](https://dx.doi.org/10.1016/j.jtbi.2016.01.029)
 
 
-Souto-Maior C, Lopes JS, Gjini E, Struchiner CJ, Teixeira L, Gomes MGM
+Souto-Maior C, Lopes JS, Gjini E, Struchiner CJ, Teixeira L, Gomes MGM.
 Heterogeneity in symbiotic effects facilitates Wolbachia establishment in insect populations.
 Theoretical Ecology 2015;8:53–65 [doi:  10.1007/s12080-014-0235-7](https://dx.doi.org/10.1007/s12080-014-0235-7)
 
@@ -30,7 +30,7 @@ Unveiling Time in Dose-Response Models to Infer Host Susceptibility to Pathogens
 PLoS Comput Biol 2014;10:e1003773. [doi: 10.1371/journal.pcbi.1003773](https://dx.doi.org/10.1371/journal.pcbi.1003773)
 
 ### book chapters and others
-Souto-Maior C
+Souto-Maior C.
 Host–Symbiont–Pathogen–Host Interactions: Wolbachia, Vector-Transmitted Human Pathogens, and the Importance of Quantitative Models of Multipartite Coevolution.
 In. Reticul. Evol. Symbiogenesis, Lateral Gene Transf. Hybrid. Infect. Hered. Gontier, Nathalie (Ed.) 2015 pp 207–230.
 
