@@ -25,7 +25,7 @@ footer ul li {
 }
 
 a {
-  color: #FF4500 /* OrangeRed #FF6347 'Tomato' #9370DB; 'MediumPurple' #6B8E23; 'OliveDrab'  */
+  color: OliveDrab /* #FF4500 OrangeRed #FF6347 'Tomato' #9370DB; 'MediumPurple' #6B8E23; 'OliveDrab'  */
   text-decoration: none;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
