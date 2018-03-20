@@ -25,7 +25,7 @@ footer ul li {
 }
 
 a {
-  color: Crimson /* #DC143C DarkOrange; #FF8C00 DarkOrange #FF4500 OrangeRed #FF6347 'Tomato' #9370DB; 'MediumPurple' #6B8E23; 'OliveDrab' */
+  color: Crimson; /* #DC143C DarkOrange; #FF8C00 DarkOrange #FF4500 OrangeRed #FF6347 'Tomato' #9370DB; 'MediumPurple' #6B8E23; 'OliveDrab' */
   text-decoration: none;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
