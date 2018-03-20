@@ -6,11 +6,11 @@ title: main
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-    <h1><a style= "text-decoration:none;" href="{{ post.url }}"> >>> {{ post.title }}</a></h1>
         <p class="author">
-            <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
+            <span class="date">{{ page.date }}</span> <!-- {{ page.date | date: "%Y-%m-%d" }} -->
         </p>
     <div class="content">
+        <h2><a style= "text-decoration:none;" href="{{ post.url }}"> >>> {{ post.title }}</a></h2>
         {{ post.content }}
     </div>
 {% endfor %}
