@@ -3,7 +3,7 @@ layout: post
 title: "Introduction/Disclaimer"
 date: 2018-02-22
 ---
-## [>>>Introduction/Disclaimer](https://caesoma.github.io/archive/standalone/2018-02-22-introduction-disclaimer.md)
+## [>>>Introduction/Disclaimer](https://caesoma.github.io/archive/standalone/2018-02-22-introduction-disclaimer)
 
 This is a personal page, but it is not personal in the sense that I will not write about my personal life.
 This is a professional web page, but it is not professional in that it does not represent the view of any professional organization I work or worked for -- this is by no means an institutional web page.
