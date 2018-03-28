@@ -16,7 +16,7 @@ Model-based inference from multiple dose, time course data reveals _Wolbachia_ e
 PLoS Negl Trop Dis 2018;12:e0006339
 [[doi: 10.1371/journal.pntd.0006339](https://doi.org/10.1371/journal.pntd.0006339)]
 [[data](https://zenodo.org/record/1187178#.Wrudv5PwYTQ)]
-[[code repo](https://github.com/caesoma/model-based-inference-denv1-wmel-aegypti/)]
+[[code](https://github.com/caesoma/model-based-inference-denv1-wmel-aegypti/)]
 
 Souto-Maior C, Rasmussen DA,  Maciel-De-Freitas R, Gomes MGM.
 A51 Dengue virus multi-strain models as hypotheses for serotype interaction.
@@ -36,7 +36,7 @@ Pessoa D, Souto-Maior C, Gjini E, et al.
 Unveiling Time in Dose-Response Models to Infer Host Susceptibility to Pathogens.
 PLoS Comput Biol 2014;10:e1003773. [[doi: 10.1371/journal.pcbi.1003773](https://dx.doi.org/10.1371/journal.pcbi.1003773)]
 [[data](https://doi.org/10.1371/journal.pcbi.1003773.s001)]
-[[code repo](https://github.com/dpessoaIGC/Dose-Invariant_Susceptibility_Estimator)]
+[[code](https://github.com/dpessoaIGC/Dose-Invariant_Susceptibility_Estimator)]
 
 ### book chapters and others
 Souto-Maior C.
