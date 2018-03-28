@@ -35,6 +35,8 @@ Theoretical Ecology 2015;8:53–65 [[doi:  10.1007/s12080-014-0235-7](https://dx
 Pessoa D, Souto-Maior C, Gjini E, et al.
 Unveiling Time in Dose-Response Models to Infer Host Susceptibility to Pathogens.
 PLoS Comput Biol 2014;10:e1003773. [[doi: 10.1371/journal.pcbi.1003773](https://dx.doi.org/10.1371/journal.pcbi.1003773)]
+[[data](https://doi.org/10.1371/journal.pcbi.1003773.s001)]
+[[code repo](https://github.com/dpessoaIGC/Dose-Invariant_Susceptibility_Estimator)]
 
 ### book chapters and others
 Souto-Maior C.
