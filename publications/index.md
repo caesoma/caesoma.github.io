@@ -8,7 +8,7 @@ title: publications
 ### publications in scientific journals
 
 King J, Souto-Maior C, Sartori L, Maciel-de-Freitas R, Gomes MGM.
-Variation in Wolbachia effects on Aedes mosquitoes as a determinant of invasiveness and vectorial capacity (_forthcoming_)
+Variation in _Wolbachia_ effects on _Aedes_ mosquitoes as a determinant of invasiveness and vectorial capacity (_forthcoming_)
 <!-- [doi: 10.1371/](https://doi.org/) -->
 
 Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R.
