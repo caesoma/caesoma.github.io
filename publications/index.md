@@ -7,9 +7,13 @@ title: publications
 
 ### publications in scientific journals
 
+King J, Souto-Maior C, Sartori L, Maciel-de-Freitas R, Gomes MGM.
+Variation in Wolbachia effects on Aedes mosquitoes as a determinant of invasiveness and vectorial capacity (_forthcoming_)
+[//]: # (https://doi.org/)
+
 Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R.
 Model-based inference from multiple dose, time course data reveals _Wolbachia_ effects on infection profiles of type 1 dengue virus in _Aedes aegypti_.
-2018 _(upcoming)_
+PLoS Negl Trop Dis 2018;12:e0006339 [doi: 10.1371/journal.pntd.0006339](https://doi.org/10.1371/journal.pntd.0006339)
 
 Souto-Maior C, Rasmussen DA,  Maciel-De-Freitas R, Gomes MGM.
 A51 Dengue virus multi-strain models as hypotheses for serotype interaction.
