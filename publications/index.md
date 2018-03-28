@@ -9,7 +9,7 @@ title: publications
 
 King J, Souto-Maior C, Sartori L, Maciel-de-Freitas R, Gomes MGM.
 Variation in Wolbachia effects on Aedes mosquitoes as a determinant of invasiveness and vectorial capacity (_forthcoming_)
-[//]: <> (https://doi.org/)
+<!-- [doi: 10.1371/](https://doi.org/) -->
 
 Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R.
 Model-based inference from multiple dose, time course data reveals _Wolbachia_ effects on infection profiles of type 1 dengue virus in _Aedes aegypti_.
