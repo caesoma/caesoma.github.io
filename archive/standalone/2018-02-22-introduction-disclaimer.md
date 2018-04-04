@@ -11,4 +11,4 @@ I will be giving my personal opinion or perspective on professional topics, that
 This is not a peer-reviewed publication (for those, see [publications](https://caesoma.github.io/publications)), and I do not know everything (whatever some people may seem to think, no one does), so some things will be incomplete, wrong, biased and/or prejudiced. I will try my best, and sometimes simply try, but in the best tradition of science I will be very happy to have feedback on much of what I write here -- it may well be even better than the best tradition because it dates back from the 19th century and broad peer- and non-peer-review is only possible now, in 21st century.
 The things written here can be broad or specific, philosophical or technical, they may even be incomprehensible to most or all people and serve simply as encouragement for me to elaborate on something that I would otherwise just divagate about inside my head.
 
--- Caetano, {{ page.date | date: "%Y-%m-%d" }}
+`-- caetano, {{ page.date | date: "%Y-%m-%d" }}`
