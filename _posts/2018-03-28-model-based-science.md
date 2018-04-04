@@ -4,7 +4,7 @@ title: "Model-based inference in experimental science"
 date: 2018-03-28
 ---
 
-## [>{{ post.title }}](https://caesoma.github.io/archive/standalone/2018-03-28-model-based-science)
+## [>{{ page.title }}](https://caesoma.github.io/archive/standalone/2018-03-28-model-based-science)
 <!-- >Model-based inference in experimental science: putting theory and practice together -->
 
 There seemed to be a split between theoretical and experimental science back when I was a chemistry undergrad over ten years ago. Even then I got to both work in an inorganic chemistry wet lab, and apply the theory of quantum mechanics to spectroscopy and molecular structure calculations, but the split was there. The same thing was there between health/medical statisticians working on epidemiological problems and clinicians, as well as in biology more recently as a finished my Ph.D. work and began working in a quantitative genetics lab.
