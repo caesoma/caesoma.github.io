@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Model-based inference in experimental science"
 date: 2018-03-28
 ---
