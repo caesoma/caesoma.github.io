@@ -18,7 +18,4 @@ I also argue that they are always there, in simpler or more sophisticated forms,
 
 This is not a page on methods -- I'm not a computer scientists or a programmer -- it's not a page on modeling either -- I'm not a mathematician or statistician by training either. It's not a page on biology specifically, although this is what I work with and what I chose for the most interesting scientific problems I thought were out there. It just may be a blog on the interface of different disciplines to try to approach problems in a different way, and how quantitative models help doing that.
 
--- caesoma {{ page.date | date: "%Y-%m-%d" }}
-
-
 <!-- [//]: # (comment) -->
