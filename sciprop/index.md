@@ -2,7 +2,7 @@
 layout: default
 title: scientific proposal
 ---
-<font color=#484848>{{ page.title }}
+{{ page.title }}
 ===============
 
 A scientific proposal is not a thing, really, yet, but it will be, maybe.
