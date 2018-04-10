@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a reply to 'The Scientific Paper Is Obsolete')."
+title: "Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a reply to _The Scientific Paper Is Obsolete_)"
 date: 2018-04-09
 ---
 
-## [>{{ post.title }}](https://caesoma.github.io/archive/standalone/2018-04-09-not-just-the-scientific-paper-is-obsolete)
+## [> Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a reply to _The Scientific Paper Is Obsolete_)](https://caesoma.github.io/archive/standalone/2018-04-09-not-just-the-scientific-paper-is-obsolete)
 
 The _scientific paper_ -- the actual form of it -- is to this day used by researchers to communicate results, despite being essentially the same as the paper version created 400 years ago, and that is limiting in a world where communication has evolved into a plethora of digital channels in all shapes and formats. The "notebook" is an interactive, digital replacement that could circumvent essentially all limitations for a piece of paper (or a _pdf_ file). That is what is argued in a [piece in The Atlantic](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/).
 
