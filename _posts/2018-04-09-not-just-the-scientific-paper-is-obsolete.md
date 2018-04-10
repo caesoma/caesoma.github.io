@@ -4,7 +4,7 @@ title: "Many things in science are obsolete"
 date: 2018-04-09
 ---
 
-## [> {{ post.title }}](https://caesoma.github.io/archive/standalone/2018-04-09-not-just-the-scientific-paper-is-obsolete)
+## [> {{ page.title }}](https://caesoma.github.io/archive/standalone/2018-04-09-not-just-the-scientific-paper-is-obsolete)
 
 ### Trying to set one new standard will have it soon be so as well (a reply to _The Scientific Paper Is Obsolete_)
 
