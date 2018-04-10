@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a reply to '_The Scientific Paper Is Obsolete_')."
+title: "Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a reply to _The Scientific Paper Is Obsolete_)."
 date: 2018-04-09
 ---
 
