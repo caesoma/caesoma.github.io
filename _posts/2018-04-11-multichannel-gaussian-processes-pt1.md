@@ -34,7 +34,7 @@ This may (or may not) sound very fancy, so it's important to remind yourself (an
 
 <!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
 
-*References*
+**References**
 1. [Ross R. An application of the theory of probabilities to the study of a priori pathometry--Part I Proc R Soc A 1916;638:204-230](http://rspa.royalsocietypublishing.org/content/92/638/204)
 2. [Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R. Model-based inference from multiple dose, time course data reveals _Wolbachia_ effects on infection profiles of type 1 dengue virus in _Aedes aegypti_. PLoS Negl Trop Dis 2018;12:e0006339](https://doi.org/10.1371/journal.pntd.0006339)
 3. [Carl Edward Rasmussen, Christopher K.I. Williams. Gaussian. Processes for Machine Learning. MIT Press. 2006.](http://www.gaussianprocess.org/gpml/)

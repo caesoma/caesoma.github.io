@@ -32,12 +32,11 @@ I recommend getting familiarized with some of the theory and computational imple
 Some of the features I will describe in the next post are outlined in two papers from [Bonilla et al.](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction.pdf), and [Melkumyan and Ramos](https://www.ijcai.org/Proceedings/11/Papers/238.pdf). The result are interacting processes with kernels between the different channels, and a covariance matrix that defines the intensity of these interactions. That may be useful to improve inference, and especially to estimate which are the most important interactions --  this can be informative of the underlying mechanisms.
 This may (or may not) sound very fancy, so it's important to remind yourself (and myself) that like any other statistical method there are situations where "machine learning" is useful and other where it is not; claiming to use artificial intelligence is a fast way to associate to the state-of-the-art, but these days it is more often a buzzword-fueled marketing ploy than a sign of any sort of wisdom.
 
-`-- caetano, {{ page.date | date: "%Y-%m-%d" }}`
-
-*References*
+**References**
 1. [Ross R. An application of the theory of probabilities to the study of a priori pathometry--Part I Proc R Soc A 1916;638:204-230](http://rspa.royalsocietypublishing.org/content/92/638/204)
 2. [Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R. Model-based inference from multiple dose, time course data reveals _Wolbachia_ effects on infection profiles of type 1 dengue virus in _Aedes aegypti_. PLoS Negl Trop Dis 2018;12:e0006339](https://doi.org/10.1371/journal.pntd.0006339)
 3. [Carl Edward Rasmussen, Christopher K.I. Williams. Gaussian. Processes for Machine Learning. MIT Press. 2006.](http://www.gaussianprocess.org/gpml/)
- 2018;12:e0006339](http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0006339)
 4. [Bonilla EV, Chai KM, Williams CKI. Multi-task Gaussian Process Prediction](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction)
 5. [Melkumyan A, Ramos F. Multi-Kernel Gaussian Processes](https://www.ijcai.org/Proceedings/11/Papers/238.pdf)
+
+`-- caetano, {{ page.date | date: "%Y-%m-%d" }}`
