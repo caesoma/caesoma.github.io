@@ -4,7 +4,7 @@ title: "Multi-channel gaussian processes (part1: introduction)"
 date: 2018-04-11
 ---
 
-## [> {{ page.title}}](https://caesoma.github.io/archive/standalone/2018-03-07-multichannel-gaussian-processes)
+## {{ page.title }}
 
 Machine learning is all the rage these days, it is hard to hear about some new cool thing that doesn't involve the term, somewhat replacing the more vague and [Altered Carbon](https://motherboard.vice.com/en_us/article/a34dxe/altered-carbon-netflix-review) -invoking term AI (in trying to avoid clichés I should at least attempt to stay away from _Blade Runner_ references), and now-already-outdated ones like data mining, which these days sounds like something from the 1980s.
 Apparently, most applications still seem to use neural networks, which can be very good at the job, but are actually stuff from the 80s as pointed out by people like [Ben Vigoda](https://tedxboston.org/speaker/vigoda).
