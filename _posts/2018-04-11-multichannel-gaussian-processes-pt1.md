@@ -6,7 +6,7 @@ date: 2018-04-11
 
 ## [> {{ page.title}}](https://caesoma.github.io/archive/standalone/2018-04-11-multichannel-gaussian-processes-pt1)
 
-Machine learning is all the rage these days, it is hard to hear about some new cool thing that doesn't involve the term, somewhat replacing the more vague and [Altered Carbon](https://motherboard.vice.com/en_us/article/a34dxe/altered-carbon-netflix-review) -invoking term AI (in trying to avoid clichés I should at least attempt to stay away from _Blade Runner_ references), and now-already-outdated ones like data mining, which these days sounds like something from the 1980s.
+Machine learning is all the rage these days, it is hard to hear about some new cool thing that doesn't involve the term, somewhat replacing the more vague and [Altered Carbon](https://motherboard.vice.com/en_us/article/a34dxe/altered-carbon-netflix-review)-invoking term AI (in trying to avoid clichés I should at least attempt to stay away from _Blade Runner_ references), and now-already-outdated ones like data mining, which these days sounds like something from the 1980s.
 Apparently, most applications still seem to use neural networks, which can be very good at the job, but are actually stuff from the 80s as pointed out by people like [Ben Vigoda](https://tedxboston.org/speaker/vigoda).
 
 Alternatives to that approach include methods like gaussian processes; there are formal connection between the approaches (as there often are to many others) but the most basic connection is probably that they are all just statistics and inference with different flavors of linear algebra to glue everything together -- i.e. "machine learning" is not a separate, more sophisticated class of methods in any real way.
