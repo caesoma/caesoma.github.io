@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multi-channel gaussian processes (part1: introduction)"
+title: "Multi-channel gaussian processes (part 1: introduction)"
 date: 2018-04-11
 ---
 
