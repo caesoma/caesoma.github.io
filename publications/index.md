@@ -7,7 +7,7 @@ title: publications
 
 ### publications in scientific journals
 
-King J, Souto-Maior C, Sartori L, Maciel-de-Freitas R, Gomes MGM.
+King J^§^, Souto-Maior C^§^, Sartori L, Maciel-de-Freitas R, Gomes MGM.
 Variation in _Wolbachia_ effects on _Aedes_ mosquitoes as a determinant of invasiveness and vectorial capacity.
 Nature Communications 2018;9: 1483
 [[doi: doi:10.1038/s41467-018-03981-8](https://doi.org/10.1038/s41467-018-03981-8)]
