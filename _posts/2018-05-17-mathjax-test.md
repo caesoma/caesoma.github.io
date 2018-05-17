@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MathJax test"
-date: 0000-00-00
+date: 2018-05-17
 mathjax: true
 ---
 
