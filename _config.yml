@@ -1,5 +1,5 @@
 <!-- theme: jekyll-theme-minimal -->
-markdown: maruku
+markdown: kramdown
 plugins:
    - jekyll-paginate
    
