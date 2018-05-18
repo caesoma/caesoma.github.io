@@ -5,9 +5,9 @@
     <title>{{ page.title }}</title>
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
-    </script>
+    <!-- {% if page.mathjax %} -->
+        <!-- {% include mathjax.html %} -->
+    <!-- {% endif %} -->
     <script>
             MathJax.Hub.Config({
                 config: ["MMLorHTML.js"],
@@ -32,12 +32,9 @@
                 showProcessingMessages: false
             });
     </script>
-    <!-- {% if page.mathjax %} -->
-        <!-- {% include mathjax.html %} -->
-    <!-- {% endif %} -->
-        <!-- <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
-    </script> -->
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
     </head>
   <body>
     <nav>
