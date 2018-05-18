@@ -12,7 +12,7 @@ However, being a regular \\( \LaTeX \\) user it would be very convenient to be a
 So it's nice to be able to write simpler equations inline like this: \\( e^{i\pi} + 1= 0 \\), or longer ones like that:
 
 \\begin{equation}
-    i \frac{h}{2\pi} \frac{\partial}{\partial t} \Psi (x,t) = = \frac{h}{4m\pi}\frac{\partial^2}{\partialx^2} \Psi (x,t) + V(x)\Psi (x,t) 
+    i \hbar \frac{\partial}{\partial t} \Psi (x,t)
 \\end{equation}
 
 so anyway, since I had a test post to include the scripts and write some equations I'm going to leave this here in case it is helpful for someone trying to blog with some pretty math.
