@@ -7,12 +7,12 @@ mathjax: true
 
 ## [> {{ page.title }} ](https://caesoma.github.io/archive/standalone/2000-00-00)
 
-this is a test post for MathJax rendering: $ y = f(x) $
+this is a test post for MathJax rendering: $$ y = f(x) $$
 \\begin{equation}
     f = c\cdot\lambda
 \\end{equation}
 
-{{ page.mathjax }}
+mathjax post label: {{ page.mathjax }}
 
 <!-- [//]: # (comment) -->
 
