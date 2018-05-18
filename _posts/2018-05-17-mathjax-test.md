@@ -7,13 +7,10 @@ mathjax: true
 
 ## [>{{ post.title }}](https://caesoma.github.io/archive/standalone/2000-00-00)
 
-This is a test post for MathJax rendering: $y = f(x)$
-
+this is a test post for MathJax rendering: $ y = f(x) $
 \\begin{equation}
     f = c\cdot\lambda
 \\end{equation}
-
-$$ y \tilde N(0, K + \sigma I) $$
 
 <!-- [//]: # (comment) -->
 
