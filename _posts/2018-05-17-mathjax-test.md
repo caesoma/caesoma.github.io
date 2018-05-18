@@ -12,8 +12,6 @@ this is a test post for MathJax rendering: $$ y = f(x) $$
     f = c\cdot\lambda
 \\end{equation}
 
-{{ page.mathjax }}
-
 <!-- [//]: # (comment) -->
 
 <!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->

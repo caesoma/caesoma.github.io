@@ -6,6 +6,9 @@ title: main
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
+  {% if post.mathjax %}
+      {% include mathjax.html %}
+  {% endif %}
     <!-- <h2><a style= "text-decoration:none;" href="{{ post.url }}"> >>> {{ post.title }}</a></h2> -->
          <!-- <p class="author">
             <span class="date">{{ page.date }}</span>{{ page.date | date: "%Y-%m-%d" }}
