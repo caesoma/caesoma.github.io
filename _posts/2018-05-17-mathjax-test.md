@@ -12,6 +12,8 @@ this is a test post for MathJax rendering: $ y = f(x) $
     f = c\cdot\lambda
 \\end{equation}
 
+$$ y ~ N(0, K + \sigma I) $$
+
 <!-- [//]: # (comment) -->
 
 <!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
