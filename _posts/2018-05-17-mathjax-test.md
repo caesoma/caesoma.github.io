@@ -5,7 +5,7 @@ date: 2018-05-17
 mathjax: true
 ---
 
-## [> {{ post.title }} ](https://caesoma.github.io/archive/standalone/2000-00-00)
+## [> {{ page.title }} ](https://caesoma.github.io/archive/standalone/2000-00-00)
 
 this is a test post for MathJax rendering: $$ y = f(x) $$
 \\begin{equation}
