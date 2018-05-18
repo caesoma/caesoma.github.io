@@ -12,7 +12,7 @@ However, being a regular \\( \LaTeX \\) user it would be very convenient to be a
 So it's nice to be able to write simpler equations inline like this: \\( e^{i\pi} + 1= 0 \\), or longer ones like that:
 
 \\begin{equation}
-    f = c \cdot \lambda
+    i \hbar 
 \\end{equation}
 
 so anyway, since I had a test post to include the scripts and write some equations I'm going to leave this here in case it is helpful for someone trying to blog with some pretty math.
