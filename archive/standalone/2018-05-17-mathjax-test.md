@@ -8,8 +8,9 @@ mathjax: true
 ## {{ page.title }}
 
 I  wanted (and still want) to keep this page/blog as simple as possible, which meant not including any JavaScript at all or anything "fancy". So I'd have text, figures, and any mathematical symbols or equations would just be figures as well from the very handy [LaTeXiT](https://www.chachatelier.fr/latexit/).
-However, being a regular \\( \LaTeX \\) user it would be very convenient to be able to just write equations _inline_ and _display_ style so when googling I found out about [MathJax](https://www.mathjax.org/). There are many howtos on google for how to incorporate the MathJax scripts into GitHub pages, and you can just copy a [snippet](https://github.com/caesoma/caesoma.github.io/blob/master/_includes/mathjax.html) into your default layout page, but it took me a little more work with the liquid tags to load the scripts only for [posts where I set the mathjax flag](https://github.com/caesoma/caesoma.github.io/blob/master/index.html), so there's an example of trying to keep that simple.
-So it's nice to be able to write simpler equations inline like this: \\( e^{i\pi} + 1= 0 \\), or longer ones like that:
+However, being a regular \\( \LaTeX \\) user it would be very convenient to be able to just write equations _inline_ and _display_ style so when googling I found out about [MathJax](https://www.mathjax.org/). There are many howtos on google for how to incorporate the MathJax scripts into GitHub pages, and you can just copy a [snippet](https://github.com/caesoma/caesoma.github.io/blob/master/_includes/mathjax.html) into your default layout page, but it took me a little more work with the liquid tags to load the scripts only for [posts where I set the mathjax flag](https://github.com/caesoma/caesoma.github.io/blob/master/index.html), and here's an example of trying to keep that simple.
+
+It's nice to be able to write simpler equations inline like this: \\( e^{i\pi} + 1= 0 \\), or longer ones like that:
 
 \\begin{equation}
   i \hbar \frac{\partial}{\partial t} \Psi (x,t) = -\frac{\hbar^2}{2m}\nabla \Psi (x,t) + V(x)\Psi (x,t)
