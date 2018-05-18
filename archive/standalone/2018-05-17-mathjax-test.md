@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Mathematical symbols and equations with MathJax rendering of \\( \LaTeX \\) symbols"
+title: "Mathematical symbols and equations with MathJax rendering of LaTeX symbols"
 date: 2018-05-17
 mathjax: true
 ---
