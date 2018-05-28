@@ -18,7 +18,7 @@ Furthermore, the kernel parameters may depend on which channel the training poin
 In the case of covariance between different channels these parameters may differ, resulting in \\( \ell_1^2 + \ell_2^2 \\) instead of \\( \ell^2 + \ell^2 = 2\ell^2\\), indicated by the subscripts in \\( k_{lk} \\), e.g. \\( k_{12} \\) in this case.
 
 \\begin{equation}
-  k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp\left(\frac{|x_{11} - x_{21}|^2}{\ell_1^2 + \ell_2^2}\right)
+  k_{12}(x_{11},x_{21}) = 
 \\end{equation}
 
   Melkumyan and Ramos showed how to obtain these covariance functions for different kernels (also having a different kind of kernel for each channel).
