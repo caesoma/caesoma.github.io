@@ -30,8 +30,7 @@ To illustrate that, given 2 training points for channel 1 and two for channel 2,
 
 \\begin{equation}
 K = \begin{bmatrix}
-k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21}) \\
-k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21})
+k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21}) \\ k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21})
 \end{bmatrix}
 \\end{equation}
 
