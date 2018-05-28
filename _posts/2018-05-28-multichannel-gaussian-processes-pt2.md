@@ -49,7 +49,7 @@ k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22})
 \end{bmatrix}
 \\end{equation}  -->
 
-![Kmatrix](/images/latexit/Kmatrix.png)
+![Kmatrix](../images/latexit/Kmatrix.png)
 
 <!-- [//]: # (K = \begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) & k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) & k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \\ k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) & k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) & k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \end{bmatrix}) -->
 
@@ -60,20 +60,20 @@ k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22})
   From here there are at least two ways we can go: you may want to predict the values at other values of \\( x \\) that were not observed, and you can estimate the _hyperparameters_.
 In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions:
 
-\\begin{align}
+\\begin{equation}
 \bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
 Var[f_*] &= \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}}
-\\end{align}
+\\end{equation}
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
   Bringing together that formulation with what's described in the papers I cite, Bonilla _et al._ write the _covariance_ matrix as a kronecker product \\( K = K_f \otimes K^x \\), where \\( K_f \\) is the positive semidefinite matrix with the variances of each single channel, and the covariance between channels, and \\( K^x \\) are the correlation matrix blocks for each channel and between channels. To write this as this kronecker product the correlation blocks (\\(K^x\\)) must be assumed to be the same, and if there is no noise added to the correlation matrix, the gaussian process can be written as an expression independent of the (\\(K_f\\)) matrix:
 
-\\begin{align}
+\\begin{equation}
 \bar{f}(\mathbf{x_*}) &= (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}\mathbf{y} \\
  &= (K_f(Kf)^{-1}) \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} \\
  &= I \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y}
-\\end{align}
+\\end{equation}
 
   Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \\( \ell \\)), the blocks are different even in the absence of added noise, to there is transfer regardless of the noise.
 
