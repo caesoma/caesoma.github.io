@@ -22,7 +22,7 @@ The same applies to the signal variance of the process that multiplies the covar
 For instance, the entry of the matrix corresponding to the correlation between the first training point of channel one and the first of channel two has signal covariance (where we dropped the subscript \\( f\\) ) \\( \sigma_{12}^2 \\) and bandwidth parameters \\( \ell_1 \\) and \\( \ell_2 \\), given then by
 
 \\begin{equation}
-    k_{12}(x_{11},x_{21}) = \sigma
+    k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp
 \\end{equation}
 
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form :
