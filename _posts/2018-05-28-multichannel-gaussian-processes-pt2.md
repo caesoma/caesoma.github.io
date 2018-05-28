@@ -19,7 +19,7 @@ In the case of covariance between different channels these parameters may differ
 
   Melkumyan and Ramos showed how to obtain these covariance functions for different kernels (also having a different kind of kernel for each channel).
 The same applies to the signal variance of the process that multiplies the covariance matrix, instead of a single \\( \sigma_f^2 \\) for each channel that is extended to being a symmetric matrix of size \\( MxM \\) for \\( M \\) channels giving the signal variance for each channel on the signal covariance between channels off of diagonal, that is what is described by [Bonilla _et al._](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction).
-For instance, the entry of the matrix corresponding to the correlation between the first training point of channel one and the first of channel two has signal covariance (where we dropped the subscript \\( f\\) ) \\( \sigma_{12}^2 \\) and bandwidth parameters \\( l_1 \\) and \\( l_2 \\), given then by
+For instance, the entry of the matrix corresponding to the correlation between the first training point of channel one and the first of channel two has signal covariance (where we dropped the subscript \\( f\\) ) \\( \sigma_{12}^2 \\) and bandwidth parameters \\( \ell_1 \\) and \\( \ell_2 \\), given then by
 
 \\begin{equation}
     k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp\left(\frac{|x_{11} - x_{21}|^2}{\ell_1^2 + \ell_2^2}\right)
