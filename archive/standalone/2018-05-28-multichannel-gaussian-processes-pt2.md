@@ -29,9 +29,7 @@ where  \\(r = x_{11}-x_{21}\\).
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form :
 
 \\begin{equation}
-K = \begin{bmatrix}
-k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21}) \\ k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21})
-\end{bmatrix}
+K = \begin{bmatrix} k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21}) \\ k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{21}) \end{bmatrix}
 \\end{equation}
 
 <!-- ![Kmatrix](../images/latexit/Kmatrix.png) -->
