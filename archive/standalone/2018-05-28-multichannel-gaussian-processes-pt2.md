@@ -30,7 +30,7 @@ $$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left(  \frac{-|x_{11} - x_{21}|^2}
 <!-- where  \\(r = x_{11}-x_{21}\\). -->
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form :
 
-$$ K = begin{matrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) \end{matrix} $$
+$$ K = begin{bmatrix} a & b \\ c & d \end{bmatrix} $$
 
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
 
