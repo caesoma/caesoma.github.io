@@ -25,26 +25,15 @@ For instance, the entry of the matrix corresponding to the correlation between t
     k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left(  \frac{-|r|^2}{\ell_1^2 + \ell_2^2} \right)
 \\end{equation}
 
+where  \\(r = x_{11}-x_{21}\\).
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form :
 
 \\being{equation}
 K = \begin{bmatrix}
-\sigma^2_{11}\begin{pmatrix}
-k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\
-k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12})
-\end{pmatrix}
-\sigma^2_{12} \begin{pmatrix}
- k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22})  \\
-k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22})
-\end{pmatrix}\\
-\sigma^2_{21} \begin{pmatrix}
-k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) \\
-k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12})
-\end{pmatrix}
-\sigma^2_{22} \begin{pmatrix}
-k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\
-k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22})
-\end{pmatrix}
+\sigma^2_{11}
+\sigma^2_{12} \\
+\sigma^2_{21}
+\sigma^2_{22} 
 \end{bmatrix}
 \\end{equation}
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
