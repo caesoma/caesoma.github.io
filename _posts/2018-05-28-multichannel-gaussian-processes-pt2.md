@@ -30,9 +30,9 @@ To illustrate that, given 2 training points for channel 1 and two for channel 2,
 
 \\being{equation}
 K = \begin{bmatrix}
-\sigma11 \sigma12 \\
-\sigma21 \sigma22 
-\end{bmatrix}
+k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\
+k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12})
+\end{pmatrix}
 \\end{equation}
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
 
