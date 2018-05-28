@@ -17,6 +17,10 @@ Alternatively, we may want to infer the parameters (or _hyperparameters_ as the 
 Furthermore, the kernel parameters may depend on which channel the training point belongs to ([Melkumyan and Ramos](https://www.ijcai.org/Proceedings/11/Papers/238.pdf)); normally the parameters of the squared exponential kernel, for instance, include the square of the bandwidth \\( 2\ell^2 \\), which arises from both data points coming from the same process.
 In the case of covariance between different channels these parameters may differ, resulting in \\( \ell_1^2 + \ell_2^2 \\) instead of \\( \ell^2 + \ell^2 = 2\ell^2\\), indicated by the subscripts in \\( k_{lk} \\), e.g. \\( k_{12} \\) in this case.
 
+\\begin{equation}
+  i \hbar \frac{\partial}{\partial t} \Psi (x,t) = -\frac{\hbar^2}{2m}\nabla^2 \Psi (x,t) + V(x)\Psi (x,t)
+\\end{equation}
+
   Melkumyan and Ramos showed how to obtain these covariance functions for different kernels (also having a different kind of kernel for each channel).
 The same applies to the signal variance of the process that multiplies the covariance matrix, instead of a single \\( \sigma_f^2 \\) for each channel that is extended to being a symmetric matrix of size \\( MxM \\) for \\( M \\) channels giving the signal variance for each channel on the signal covariance between channels off of diagonal, that is what is described by [Bonilla _et al._](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction).
 For instance, the entry of the matrix corresponding to the correlation between the first training point of channel one and the first of channel two has signal covariance (where we dropped the subscript \\( f\\) ) \\( \sigma_{12}^2 \\) and bandwidth parameters \\( \ell_1 \\) and \\( \ell_2 \\), given then by
