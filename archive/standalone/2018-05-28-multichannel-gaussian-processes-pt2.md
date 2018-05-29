@@ -56,7 +56,7 @@ $$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}
 
 \begin{align} \bar{f}(\mathbf{x_*}) & = (K_f \otimes \mathbf{k^x_*})^T \\\\ & = (K_f(Kf)^{-1}) \otimes \mathbf{y} \\\\ & = I \end{align}
 
-\begin{align} \\bar{f}(\\mathbf{x*}) & = (K_f \\otimes \\mathbf{k*^x})^T (K_f \\otimes K^x)^{-1}\\mathbf{y} \\\\ & = (K_f(Kf)^{-1}) \\otimes ((\\mathbf{k*^x})^T (K^x)^{-1})\\mathbf{y} \\\\ & = I \\otimes ((\\mathbf{k*^x})^T (K^x)^{-1})\\mathbf{y} \end{align}
+\begin{align} \\bar{f}(\\mathbf{x_\star}) & = (K_f \\otimes \\mathbf{k_\star^x})^T (K_f \\otimes K^x)^{-1}\\mathbf{y} \\\\ & = (K_f(Kf)^{-1}) \\otimes ((\\mathbf{k_\star^x})^T (K^x)^{-1})\\mathbf{y} \\\\ & = I \\otimes ((\\mathbf{k_\star^x})^T (K^x)^{-1})\\mathbf{y} \end{align}
 
 \begin{align} A & = B \\\\ & = C \end{align}
 
