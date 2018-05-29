@@ -28,6 +28,9 @@ To illustrate that, given 2 training points for channel 1 and two for channel 2,
 
 $$ K = \begin{matrix} a & b \\ c & a \end{matrix} $$
 
+\\begin{equation} K = \begin{matrix} a & b \\ c & a \end{matrix} \\end{equation}
+
+
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
 
 <!-- [//]: # (K = \\\begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) & k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) & k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \\ k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) & k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) & k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \\end{bmatrix}) -->
@@ -56,7 +59,7 @@ $$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}
 \\end{align}
 
 \\begin{align}
-\bar{f}(\mathbf{x_*}) &= K_f \otimes k_*^x
+\begin{align} A & = B \\\\ & = C \end{align}
 \\end{align}
 
   Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \\( \ell \\)), the blocks are different even in the absence of added noise, to there is transfer regardless of the noise.
