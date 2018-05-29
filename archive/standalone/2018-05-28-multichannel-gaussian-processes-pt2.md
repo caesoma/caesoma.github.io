@@ -7,7 +7,7 @@ mathjax: true
 
 ## {{ page.title }}
 
-  Most applications of the gaussian processes, whether it's regression or classification, have one channel (or task) with a set of observations \\( y = f(x) + \varepsilon ) \\) for some values of an independent variable \\( x \\) (the _training data_), and possibly a set of unobserved values \\( x_* \\) for which we would like to predict the values.
+  Most applications of the gaussian processes, whether it's regression or classification, have one channel (or task) with a set of observations \\( y = f(x) + \varepsilon ) \\) for some values of an independent variable \\( x \\) (the _training data_), and possibly a set of unobserved values \\( x_\star \\) for which we would like to predict the values.
 Alternatively, we may want to infer the parameters (or _hyperparameters_ as the machine learnists like to call it, \\( \sigma_f^2 \\), the signal variance, and \\( \ell \\), the bandwidth, in the "squared exponential kernel") that have higher probability of having generated the observed values.
 <!-- As described by [Rasmussen and Williams Gaussian](http://www.gaussianprocess.org/gpml/) -- and apparently in -->
 
@@ -30,6 +30,7 @@ $$ K = \begin{bmatrix} a & b \\ c & a \end{bmatrix} $$
 
 \\begin{equation} K = \begin{bmatrix} a & b \\\\ c & a \end{bmatrix} \\end{equation}
 
+$$ K = \begin{pmatrix} \sigma^2_{11} \begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) \end{bmatrix} \sigma^2_{12} \begin{bmatrix} k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \end{bmatrix} \\ \sigma^2_{21} \begin{bmatrix} k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) \end{bmatrix} \sigma^2_{22} \begin{bmatrix} k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \end{bmatrix} \end{pmatrix} $$
 
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
 
@@ -43,10 +44,8 @@ $$ K = \begin{bmatrix} a & b \\ c & a \end{bmatrix} $$
 In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions:
 
 
-$$ \bar{f}_{l*} = \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
-Var[\bar{f}_{l*}] = \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} $$
-
-\begin{align} \bar{f}_{l} = \mathbf{k_{l}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\\\ Var[\bar{f}_{l}] = \mathbf{k_{l}} - \mathbf{k_{l}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l}} \begin{align}
+$$ \bar{f}_{l\star} = \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
+Var[\bar{f}_{l\star}] = \mathbf{k_{l\star\star}} - \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l\star}} $$
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
