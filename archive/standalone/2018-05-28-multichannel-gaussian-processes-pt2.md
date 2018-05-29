@@ -42,27 +42,17 @@ $$ K = \begin{bmatrix} a & b \\ c & a \end{bmatrix} $$
   From here there are at least two ways we can go: you may want to predict the values at other values of \\( x \\) that were not observed, and you can estimate the _hyperparameters_.
 In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions:
 
-\begin{align} \bar{f}_{l*} = \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
-Var[\bar{f}_{l\star}] = \mathbf{k_{l\star\star}} - \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l\star}} \end{align}
+\begin{align} \bar{f}_{l\star} = \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\\\ Var[\bar{f}_{l\star}] = \mathbf{k_{l\star\star}} - \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l\star}} \end{align}
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
   Bringing together that formulation with what's described in the papers I cite, Bonilla _et al._ write the _covariance_ matrix as a kronecker product \\( K = K_f \otimes K^x \\), where \\( K_f \\) is the positive semidefinite matrix with the variances of each single channel, and the covariance between channels, and \\( K^x \\) are the correlation matrix blocks for each channel and between channels. To write this as this kronecker product the correlation blocks (\\(K^x\\)) must be assumed to be the same, and if there is no noise added to the correlation matrix, the gaussian process can be written as an expression independent of the (\\(K_f\\)) matrix:
 
-$$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}\mathbf{y} \\
+<!-- $$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}\mathbf{y} \\
 \ \quad \quad = (K_f(Kf)^{-1}) \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} \\
-\ \quad = I \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} $$
+\ \quad = I \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} $$ -->
 
-\begin{align} \bar{f}(\mathbf{x_*}) & = (K_f \otimes \mathbf{k^x_*})^T \\\\ & = (K_f(Kf)^{-1}) \otimes \mathbf{y} \\\\ & = I \end{align}
-
-\begin{align} \\bar{f}(\\mathbf{x_\star}) & = (K_f \\otimes \\mathbf{k_\star^x})^T (K_f \\otimes K^x)^{-1}\\mathbf{y} \\\\
-& = (K_f(Kf)^{-1}) \\otimes ((\\mathbf{k_\star^x})^T (K^x)^{-1})\\mathbf{y} \\\\
-& = I \\otimes ((\\mathbf{k_\star^x})^T (K^x)^{-1})\\mathbf{y} \end{align}
-
-\begin{align} A & = B \\\\ & = C \end{align}
-
-\begin{align} A & = B \\ & = C \end{align}
-
+\begin{align} \\bar{f}(\\mathbf{x_\star}) & = (K_f \\otimes \\mathbf{k_\star^x})^T (K_f \\otimes K^x)^{-1}\\mathbf{y} \\\\ & = (K_f(Kf)^{-1}) \\otimes ((\\mathbf{k_\star^x})^T (K^x)^{-1})\\mathbf{y} \\\\ & = I \\otimes ((\\mathbf{k_\star^x})^T (K^x)^{-1})\\mathbf{y} \end{align}
 
   Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \\( \ell \\)), the blocks are different even in the absence of added noise, to there is transfer regardless of the noise.
 
