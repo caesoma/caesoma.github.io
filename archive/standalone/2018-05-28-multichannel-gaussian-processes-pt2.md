@@ -46,6 +46,8 @@ In the first case, given the \\( K \\) matrix and the concatenated one-dimension
 $$ \bar{f}_{l*} = \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
 Var[\bar{f}_{l*}] = \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} $$
 
+\begin{align} \bar{f}_{l*} = \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\\\ Var[\bar{f}_{l*}] = \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} \begin{align}
+
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
   Bringing together that formulation with what's described in the papers I cite, Bonilla _et al._ write the _covariance_ matrix as a kronecker product \\( K = K_f \otimes K^x \\), where \\( K_f \\) is the positive semidefinite matrix with the variances of each single channel, and the covariance between channels, and \\( K^x \\) are the correlation matrix blocks for each channel and between channels. To write this as this kronecker product the correlation blocks (\\(K^x\\)) must be assumed to be the same, and if there is no noise added to the correlation matrix, the gaussian process can be written as an expression independent of the (\\(K_f\\)) matrix:
