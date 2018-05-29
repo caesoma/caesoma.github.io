@@ -37,20 +37,13 @@ To illustrate that, given 2 training points for channel 1 and two for channel 2,
   From here there are at least two ways we can go: you may want to predict the values at other values of \\( x \\) that were not observed, and you can estimate the _hyperparameters_.
 In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions:
 
-$$
-\bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
-Var[f_*] &= \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}}
-$$
+$$ \bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\ Var[f_*] &= \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} $$
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
   Bringing together that formulation with what's described in the papers I cite, Bonilla _et al._ write the _covariance_ matrix as a kronecker product \\( K = K_f \otimes K^x \\), where \\( K_f \\) is the positive semidefinite matrix with the variances of each single channel, and the covariance between channels, and \\( K^x \\) are the correlation matrix blocks for each channel and between channels. To write this as this kronecker product the correlation blocks (\\(K^x\\)) must be assumed to be the same, and if there is no noise added to the correlation matrix, the gaussian process can be written as an expression independent of the (\\(K_f\\)) matrix:
 
-$$
-\bar{f}(\mathbf{x_*}) &= (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}\mathbf{y} \\
- &= (K_f(Kf)^{-1}) \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} \\
- &= I \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y}
-$$
+$$ \bar{f}(\mathbf{x_*}) &= (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}\mathbf{y} \\ &= (K_f(Kf)^{-1}) \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} \\ &= I \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} $$
 
   Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \\( \ell \\)), the blocks are different even in the absence of added noise, to there is transfer regardless of the noise.
 
@@ -59,9 +52,7 @@ The true values are drawn from independent sinusoidal functions, so they don't r
 
   Estimating the hyperparameters requires computing the likelihood, which for gaussian noise has a closed form with \\( y \sim \mathcal{N}(\mu, K+\sigma_n^2I)\\). From there with the expression for the normal distribution the log likelihood can be explicitly written as:
 
-$$
-log\ p(\mathbf{y}|X) &=- \frac{1}{2} \mathbf{y}^T(K+\sigma_n^2I)^{-1}\mathbf{y} - \frac{1}{2}log|K+\sigma_n^2I| - \frac{n}{2}log 2\pi
-$$
+$$ log\ p(\mathbf{y}|X) &=- \frac{1}{2} \mathbf{y}^T(K+\sigma_n^2I)^{-1}\mathbf{y} - \frac{1}{2}log|K+\sigma_n^2I| - \frac{n}{2}log 2\pi $$
 
 Beyond this, I'm not going into inference in this post to try and keep things separate, but will probably address it later on when discussing non-gaussian likelihoods (in my opinion somewhat misleadingly called gaussian process classification, or _GPC_).
 
