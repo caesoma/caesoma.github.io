@@ -35,16 +35,12 @@ To illustrate that, given 2 training points for channel 1 and two for channel 2,
   Conceptually it is pretty simple, but actually trying to write it down and implementing it as code can be confusing at times, so it takes some staring at its repetitive structure to internalize it -- I'd say it's maybe more brute force than beauty, but that's some philosophical crap that's besides the point.
 
   From here there are at least two ways we can go: you may want to predict the values at other values of \\( x \\) that were not observed, and you can estimate the _hyperparameters_.
-In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions: \\( \bar{f}_{l*} = \mathbf{k} \\)
+In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions:
 
 
-$$ \bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
-Var[\bar{f}_{l*}] &= \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} $$
+$$ \bar{f}_{l*} = \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
+Var[\bar{f}_{l*}] = \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} $$
 
-\\begin{equation}
-\bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
-Var[\bar{f}_{l*}] &= \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}}
-\\end{equation}
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
