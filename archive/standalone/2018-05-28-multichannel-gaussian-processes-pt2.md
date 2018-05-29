@@ -26,9 +26,9 @@ $$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left( \frac{-|x_{11} - x_{21}|^2}{
 <!-- where  \\(r = x_{11}-x_{21}\\). -->
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form:
 
-$$ K = \begin{matrix} a & b \\ c & a \end{matrix} $$
+$$ K = \begin{bmatrix} a & b \\ c & a \end{bmatrix} $$
 
-\\begin{equation} K = \begin{matrix} a & b \\ c & a \end{matrix} \\end{equation}
+\\begin{equation} K = \begin{bmatrix} a & b \\\\ c & a \end{bmatrix} \\end{equation}
 
 
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
@@ -58,9 +58,12 @@ $$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}
 \\bar{f}(\\mathbf{x\_*}) = (K\_f \\otimes \\mathbf{k\_*^x})^T (K\_f \\otimes K^x)^{-1}\\mathbf{y}
 \\end{align}
 
-\\begin{align}
+\begin{align}
 \begin{align} A & = B \\\\ & = C \end{align}
-\\end{align}
+\end{align}
+
+\begin{align} A & = B \\ & = C \end{align}
+
 
   Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \\( \ell \\)), the blocks are different even in the absence of added noise, to there is transfer regardless of the noise.
 
