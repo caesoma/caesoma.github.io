@@ -21,7 +21,7 @@ In the case of covariance between different channels these parameters may differ
 The same applies to the signal variance of the process that multiplies the covariance matrix, instead of a single \\( \sigma_f^2 \\) for each channel that is extended to being a symmetric matrix of size \\( MxM \\) for \\( M \\) channels giving the signal variance for each channel on the signal covariance between channels off of diagonal, that is what is described by [Bonilla _et al._](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction).
 For instance, the entry of the matrix corresponding to the correlation between the first training point of channel one and the first of channel two has signal covariance (where we dropped the subscript \\( f\\) ) \\( \sigma_{12}^2 \\) and bandwidth parameters \\( \ell_1 \\) and \\( \ell_2 \\), given then by
 
-$$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left(  \frac{-|x_{11} - x_{21}|^2}{\ell_1^2 + \ell_2^2} \right) $$
+$$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left( \frac{-|x_{11} - x_{21}|^2}{\ell_1^2 + \ell_2^2} \right) $$
 
 <!-- where  \\(r = x_{11}-x_{21}\\). -->
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form :
@@ -37,7 +37,7 @@ To illustrate that, given 2 training points for channel 1 and two for channel 2,
   From here there are at least two ways we can go: you may want to predict the values at other values of \\( x \\) that were not observed, and you can estimate the _hyperparameters_.
 In the first case, given the \\( K \\) matrix and the concatenated one-dimensional vector of the observations \\( y = [y_1 y_2]\\) the mean and variance of an unobserved data point from a channel _l_ can be predicted with the following expressions:
 
-$$ \bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} $$
+$$ \bar{f}_{l*} &= \mathbf{k_{l*}} $$
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
