@@ -24,7 +24,9 @@ For instance, the entry of the matrix corresponding to the correlation between t
 $$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left( \frac{-|x_{11} - x_{21}|^2}{\ell_1^2 + \ell_2^2} \right) $$
 
 <!-- where  \\(r = x_{11}-x_{21}\\). -->
-To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form :
+To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form:
+
+$$ K = \begin{matrix} a & b \\ c & a \end{matrix} $$
 
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
 
@@ -50,7 +52,7 @@ $$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}
 \ \quad = I \otimes ((\mathbf{k_*^x})^T (K^x)^{-1})\mathbf{y} $$
 
 \\begin{align}
-\bar{f}(\mathbf{x\_*}) = (K\_f \otimes \mathbf{k\_*^x})^T (K\_f \otimes K^x)^{-1}\mathbf{y}
+\\bar{f}(\\mathbf{x\_*}) = (K\_f \\otimes \\mathbf{k\_*^x})^T (K\_f \\otimes K^x)^{-1}\\mathbf{y}
 \\end{align}
 
 \\begin{align}
