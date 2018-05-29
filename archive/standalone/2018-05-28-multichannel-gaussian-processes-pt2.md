@@ -41,6 +41,10 @@ In the first case, given the \\( K \\) matrix and the concatenated one-dimension
 $$ \bar{f}_{l*} = \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
 Var[\bar{f}_{l*}] = \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}} $$
 
+\\begin{equation}
+\bar{f}_{l*} &= \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
+Var[\bar{f}_{l*}] &= \mathbf{k_{l**}} - \mathbf{k_{l*}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l*}}
+\\end{equation}
 
 Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.
 
