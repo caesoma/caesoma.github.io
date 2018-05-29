@@ -21,16 +21,12 @@ In the case of covariance between different channels these parameters may differ
 The same applies to the signal variance of the process that multiplies the covariance matrix, instead of a single \\( \sigma_f^2 \\) for each channel that is extended to being a symmetric matrix of size \\( MxM \\) for \\( M \\) channels giving the signal variance for each channel on the signal covariance between channels off of diagonal, that is what is described by [Bonilla _et al._](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction).
 For instance, the entry of the matrix corresponding to the correlation between the first training point of channel one and the first of channel two has signal covariance (where we dropped the subscript \\( f\\) ) \\( \sigma_{12}^2 \\) and bandwidth parameters \\( \ell_1 \\) and \\( \ell_2 \\), given then by
 
-$$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left( \frac{-|x_{11} - x_{21}|^2}{\ell_1^2 + \ell_2^2} \right) $$
+$$ k_{12}(x_{11},x_{21}) = \sigma^2_{12} exp \left( \frac{-|x_{11}-x_{21}|^2}{\ell_1^2 + \ell_2^2} \right) $$
 
 <!-- where  \\(r = x_{11}-x_{21}\\). -->
 To illustrate that, given 2 training points for channel 1 and two for channel 2, we have a covariance matrix of the following form:
 
-$$ K = \begin{bmatrix} a & b \\ c & a \end{bmatrix} $$
-
-\\begin{equation} K = \begin{bmatrix} a & b \\\\ c & a \end{bmatrix} \\end{equation}
-
-$$ K = \begin{pmatrix} \sigma^2_{11} \begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) \end{bmatrix} \sigma^2_{12} \begin{bmatrix} k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \end{bmatrix} \\ \sigma^2_{21} \begin{bmatrix} k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) \end{bmatrix} \sigma^2_{22} \begin{bmatrix} k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \end{bmatrix} \end{pmatrix} $$
+$$ K = \begin{bmatrix} \sigma^2_{11} \begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) \end{bmatrix} \sigma^2_{12} \begin{bmatrix} k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \end{bmatrix} \\ \sigma^2_{21} \begin{bmatrix} k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) \end{bmatrix} \sigma^2_{22} \begin{bmatrix} k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \end{bmatrix} \end{bmatrix} $$
 
 <!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
 
