@@ -56,7 +56,7 @@ $$ \bar{f}(\mathbf{x_*}) = (K_f \otimes \mathbf{k_*^x})^T (K_f \otimes K^x)^{-1}
 \\end{align}
 
 \\begin{align}
-\bar{f}(\mathbf{x_*}) = K_f
+\bar{f}(\mathbf{x_*}) &= K_f
 \\end{align}
 
   Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \\( \ell \\)), the blocks are different even in the absence of added noise, to there is transfer regardless of the noise.
