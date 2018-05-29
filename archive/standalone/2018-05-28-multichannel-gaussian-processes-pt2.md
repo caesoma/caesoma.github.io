@@ -56,7 +56,7 @@ The true values are drawn from independent sinusoidal functions, so they don't r
 
   Estimating the hyperparameters requires computing the likelihood, which for gaussian noise has a closed form with \\( y \sim \mathcal{N}(\mu, K+\sigma_n^2I)\\). From there with the expression for the normal distribution the log likelihood can be explicitly written as:
 
-$$ log\ p(\mathbf{y}|X) &=- \frac{1}{2} \mathbf{y}^T(K+\sigma_n^2I)^{-1}\mathbf{y} - \frac{1}{2}log|K+\sigma_n^2I| - \frac{n}{2}log 2\pi $$
+$$ log\ p(\mathbf{y}|X) = -\frac{1}{2} \mathbf{y}^T(K+\sigma_n^2I)^{-1}\mathbf{y} - \frac{1}{2}log|K+\sigma_n^2I| - \frac{n}{2}log 2\pi $$
 
 Beyond this, I'm not going into inference in this post to try and keep things separate, but will probably address it later on when discussing non-gaussian likelihoods (in my opinion somewhat misleadingly called gaussian process classification, or _GPC_).
 
