@@ -5,7 +5,7 @@ date: 2018-05-28
 mathjax: true
 ---
 
-## [> {{ page.title }} ](https://caesoma.github.io/archive/standalone/2018-05-28-multichannel-gaussian-processes-pt2)
+## {{ page.title }}
 
   Most applications of the gaussian processes, whether it's regression or classification, have one channel (or task) with a set of observations \\( (y = f(x) + \varepsilon) \\) for some values of an independent variable \\( x \\) (the _training data_), and possibly a set of unobserved values \\( x_\star \\) for which we may like to predict the values.
 Alternatively, we may want to infer the kernel parameters (or _hyperparameters_ as the machine learnists like to call it, \\( \sigma_f^2 \\), the signal variance, and \\( \ell \\), the bandwidth, in the "squared exponential kernel") that have higher probability of having generated the observed values.
