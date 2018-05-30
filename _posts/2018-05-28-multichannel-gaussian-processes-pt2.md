@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Multi-channel gaussian processes (part2: mathematical description)"
 date: 2018-05-28
 mathjax: true
@@ -66,7 +66,7 @@ Let me know if you have any more questions by commenting on the gist or via twit
 2. [Edwin V. Bonilla, Kian M. Chai, Christopher Williams](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction)
 3. [Arman Melkumyan, Fabio Ramos, IJCAI 2011, Proceedings of the 22nd International Joint Conference on Artificial Intelligence, Barcelona, Catalonia, Spain, July 16-22, 2011](https://www.ijcai.org/Proceedings/11/Papers/238.pdf)
 
-`-- caetano, {{ page.date | date: "%Y-%m-%d" }}`
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
 
 <!-- [//]: # ()
 4. [David J.C. MacKay. Introduction to Gaussian Processes. In Bishop, C.M. editor, Neural Networks and Machine Learning. pp 84-92. Springer-Verlag. 1998.](http://www.inference.org.uk/mackay/gpB.pdf)
