@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multi-channel gaussian processes (part2: mathematical description)"
+title: "Multi-channel gaussian processes (part 2: mathematical description)"
 date: 2018-05-28
 mathjax: true
 ---
