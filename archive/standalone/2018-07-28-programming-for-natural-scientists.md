@@ -57,4 +57,4 @@ Wherever you are down this path, chances are if you're doing your job with the b
 
 <!-- [//]: # (comment) -->
 
--- caetano, {{ page.date | date: "%Y-%m-%d" }}`
+``-- caetano, {{ page.date | date: "%Y-%m-%d" }}`
