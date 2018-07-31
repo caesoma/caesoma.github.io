@@ -2,7 +2,6 @@
 layout: post
 title: "On the journey of learning computer programming as a (natural) scientist"
 date: 2018-07-30
-mathjax: true
 ---
 
 ## [> {{ page.title }}](https://caesoma.github.io/archive/standalone/2018-07-28-programming-for-natural-scientists)
