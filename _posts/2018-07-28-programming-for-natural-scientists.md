@@ -5,7 +5,7 @@ date: 2018-07-28
 mathjax: true
 ---
 
-## [> {{ post.title }}](https://caesoma.github.io/archive/standalone/2018-07-28-programming-for-natural-scientists)
+## [> {{ page.title }}](https://caesoma.github.io/archive/standalone/2018-07-28-programming-for-natural-scientists)
 
 I am a scientist, in the more old school sense of [investigating the natural world](https://en.oxforddictionaries.com/definition/scientist), as opposed to _computer scientists_ and maybe mathematicians and statisticians (who in a modern and broader sense are so just as much).
 We traditionally must spend a lot of time reading about what is known of the systems we are interested in, and are trained in the _scientific method_ to improve our knowledge of the world (without getting into how that works, except that I think anyone who claims to use the method should read [Paul Feyerabend](https://plato.stanford.edu/entries/feyerabend/#AgaiMeth1970)).
