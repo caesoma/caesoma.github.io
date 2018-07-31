@@ -9,7 +9,6 @@ date: 2018-07-30
 I am a scientist, in the more old school sense of [investigating the natural world](https://en.oxforddictionaries.com/definition/scientist), as opposed to _computer scientists_ and maybe mathematicians and statisticians (who in a modern and broader sense are so just as much).
 We traditionally must spend a lot of time reading about what is known of the systems we are interested in, and are trained in the _scientific method_ to improve our knowledge of the world (without getting into how that works, except that I think anyone who claims to use the method should read [Paul Feyerabend](https://plato.stanford.edu/entries/feyerabend/#AgaiMeth1970)).
 <!-- [//]: # (comment) -->
-
 We also need _tools_ to do science, physical ones like the telescope of Galileo then (again, read [Feyerabend](https://plato.stanford.edu/entries/feyerabend)) and [modern microscopes](https://www.microscopyu.com/microscopy-basics) today, as well conceptual ones like mathematics and statistics -- which Richard Feynman called a [box of tools](https://www.e-reading.club/chapter.php/71262/21/Feynman_-_Surely_Youre_Joking%2C_Mr._Feynman__Adventures_of_a_Curious_Character.html).
 More recently it has become important (and sometimes essential) to learn how to use computer programming languages, but while most natural scientists have heard of the existence of computers most are not trained in coding at all.
 
