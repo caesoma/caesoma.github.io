@@ -1,0 +1,62 @@
+body {
+    background-image: url(../images/gp.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1200px 130px;
+    margin: 60px auto;
+    width: 70%;
+}
+
+nav ul, footer ul {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+    padding: 0px;
+    list-style: none;
+    font-weight: normal;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 2px;
+}
+
+a {
+  color: Crimson; /* #DC143C DarkOrange; #FF8C00 DarkOrange #FF4500 OrangeRed #FF6347 'Tomato' #9370DB; 'MediumPurple' #6B8E23; 'OliveDrab' */
+  text-decoration: none;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+h1 {
+    font-size: 1.8em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+p {
+    text-align: justify;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: 1.0em;
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.alignright {
+   float: right;
+}
