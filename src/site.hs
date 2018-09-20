@@ -15,7 +15,18 @@ import           Hakyll
                           -- writerExtensions = newExtensions,
                           writerHTMLMathMethod = MathJax ""
                         }
-    in pandocCompilerWith defaultHakyllReaderOptions writerOptions -}
+    in pandocCompilerWith defaultHakyllReaderOptions writerOptions
+
+customPandocCompiler =
+  pandocCompilerWith
+    defaultHakyllReaderOptions
+    defaultHakyllWriterOptions
+      { writerHtml5            = True
+      , writerHighlight        = True
+      , writerHighlightStyle   = pygments
+      , writerHTMLMathMethod   = MathML Nothing
+      , writerEmailObfuscation = NoObfuscation
+      }  -}
 
 main :: IO ()
 main = hakyll $ do
