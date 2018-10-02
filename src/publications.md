@@ -3,6 +3,13 @@ title: publications
 layout: default
 ---
 
+<style>
+p {
+    font-size: 12pt;
+    line-height: 16pt;
+}
+ </style>
+
 ### publications in scientific journals
 
 King J<sup>§</sup>, Souto-Maior C<sup>§</sup>, Sartori L, Maciel-de-Freitas R, Gomes MGM.

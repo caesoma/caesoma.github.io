@@ -19,7 +19,6 @@ import           Hakyll
 
 customPandocCompiler =
   pandocCompilerWith
-    defaultHakyllReaderOptions
     defaultHakyllWriterOptions
       { writerHtml5            = True
       , writerHighlight        = True
