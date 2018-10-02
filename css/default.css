@@ -3,9 +3,16 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1200px 130px;
-    margin: 60px auto;
+    margin: 100px auto;
     width: 70%;
+    font-size: 15pt;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
+
+header, header a {
+    font-family: Consolas, monaco, monospace;
+}
+
 
 nav ul, footer ul {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
@@ -31,26 +38,32 @@ a {
 }
 
 h1 {
-    font-size: 1.8em;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+    font-size: 22pt;
+    font-family: Consolas, monaco, monospace;
 }
 
 p {
     text-align: justify;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 15pt;
+    line-height: 18pt;
     color: #333;
 }
 
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: 1.0em;
+    font-size: 12pt;
+    font-family: Consolas, monaco, monospace;
+}
+
+footer a {
+    font-size: 12pt;
+    font-family: Consolas, monaco, monospace;
 }
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 1.5em;
+    font-size: 12pt;
 }
 
 ul.posts li {
@@ -58,5 +71,18 @@ ul.posts li {
 }
 
 .alignright {
-   float: right;
+    float: right;
+}
+
+.textwidth {
+    max-width: 100%;
+    height: auto;
+}
+
+.full-width {
+  /* 1/3 of 60% = the 20% margin on either side */
+  max-width: 153%;
+  height: auto;
+  margin-left: -21.5%;
+  margin-right: -21.5%;
 }
