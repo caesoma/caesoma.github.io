@@ -44,7 +44,7 @@ git checkout master # --track origin/master
 cp -a src/_site/ .
 
 # Commit
-git add -A
+git stage -A
 git commit -m "publish"
 
 # Push
