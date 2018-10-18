@@ -26,7 +26,8 @@ cd ~/git/caesoma.github.io/src
 git checkout develop
 
 # git stage <modified files here>
-git commit -m "update page source"
+git stage .
+git commit -m "shell build"
 git push origin develop
 
 # Build new files
