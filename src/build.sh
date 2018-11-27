@@ -24,6 +24,7 @@ cd ~/git/caesoma.github.io/src
 
 # Verify correct branch
 git checkout develop
+cp -r ~/git/caesoma.github.io/src/ ~/git/caesomasrccopy/
 
 # git stage <modified files here>
 git stage .
@@ -49,6 +50,7 @@ git commit -m "publish"
 
 # Push
 git push origin master
+git checkout develop
 
 # Restoration
 #git checkout develop
