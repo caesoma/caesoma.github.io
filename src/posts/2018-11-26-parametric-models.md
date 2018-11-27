@@ -29,6 +29,8 @@ I don't have a simple answer (and probably not a full complex one either) for a 
 
 That is a question that is unlikely to be settled any time soon and is fertile ground for the philosophy of science. Whatever it is I think there is only hope of real progress if we can make the relationship between everything that is studied (within and between systems) formal in the mathematical sense so that it cohesively builds up towards something.
 
+(a version of this post was published on [Medium](https://medium.com/@caesoma/formal-models-of-natural-processes-should-be-the-ultimate-goal-of-quantitative-descriptions-in-d6d1ce2b5a2e); you can comment there or reach me on [twitter](https://twitter.com/caesoma))
+
 1. Judea Pearl, Dana Mackenzie. The Book of Why. **2018** Basic Books, New York.
 
 2. Judea Pearl. Causality. **2009** Cambridge University Press.
@@ -37,6 +39,6 @@ That is a question that is unlikely to be settled any time soon and is fertile g
 
 4. Ritchie, Phipson, Wu  _et al._ limma powers differential expression analyses for RNA-sequencing and microarray studies. _Nucleic Acids Research_ **2015** 43:e47,
 
-5. Goldbeter. Computational approaches to cellular rhythms. _Nature volume_ **2002** 420:238–245
+5. Goldbeter. Computational approaches to cellular rhythms. _Nature_ **2002** 420:238–245
 
 <!-- [//]: # (comment) -->
