@@ -15,7 +15,7 @@ p {
 King J<sup>§</sup>, Souto-Maior C<sup>§</sup>, Sartori L, Maciel-de-Freitas R, Gomes MGM.
 Variation in _Wolbachia_ effects on _Aedes_ mosquitoes as a determinant of invasiveness and vectorial capacity.
 _Nature Communications_ **2018**;9: 1483
-[[doi: doi:10.1038/s41467-018-03981-8](https://doi.org/10.1038/s41467-018-03981-8)]
+[[doi:10.1038/s41467-018-03981-8](https://doi.org/10.1038/s41467-018-03981-8)]
 <!-- [doi: 10.xxxx/](https://doi.org/) -->
 
 Souto-Maior C<sup>§</sup>, Sylvestre G<sup>§</sup>, Dias FBS, Gomes MGM, Maciel-De-Freitas R.
@@ -46,7 +46,9 @@ _PLoS Comput Biol_ **2014**;10:e1003773. [[doi: 10.1371/journal.pcbi.1003773](ht
 [[code](https://github.com/dpessoaIGC/Dose-Invariant_Susceptibility_Estimator)]
 
 ### preprints
-_nothing here yet, probably sometime soon_
+Caetano Souto-Maior
+Multiple-serotype models of dengue virus transmission: simulation study and perspectives for the application of inference in epidemiological surveillance
+bioRxiv **2019**:583351; [[doi: 10.1101/583351](https://doi.org/10.1101/583351)]
 
 ### book chapters and others
 Souto-Maior C.

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # create template
 # stack install hakyll
 
