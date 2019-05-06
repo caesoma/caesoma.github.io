@@ -36,6 +36,7 @@ git push origin develop
 # Build new files
 stack exec site clean
 stack exec site build
+# stack exec site watch
 
 # Get previous files
 #git fetch --all
