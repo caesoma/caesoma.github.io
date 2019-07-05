@@ -48,7 +48,7 @@ _PLoS Comput Biol_ **2014**;10:e1003773. [[doi: 10.1371/journal.pcbi.1003773](ht
 ### preprints
 Caetano Souto-Maior
 Multiple-serotype models of dengue virus transmission: simulation study and perspectives for the application of inference in epidemiological surveillance
-bioRxiv **2019**:583351; [[doi: 10.1101/583351](https://doi.org/10.1101/583351)]
+_bioRxiv_ **2019**:583351; [[doi: 10.1101/583351](https://doi.org/10.1101/583351)]
 
 ### book chapters and others
 Souto-Maior C.

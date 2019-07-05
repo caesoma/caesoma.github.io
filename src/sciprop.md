@@ -15,6 +15,8 @@ Because most things we think about are described in deterministic terms, and we 
 That is fine in general, but scientists and technologists should attempt to overcome the limitations of these descriptions.
 I am certainly not the first person to emphasize the importance of probabilistic models; I am not sure how radical are (or were) the most radical proposals in this direction.
 
+### _ _
+
 <!-- [//]: # (This may be the most platform independent comment) -->
 
 `-- caetano`
