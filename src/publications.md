@@ -32,7 +32,7 @@ _Virus Evol._ **2017**;3(Suppl 1):vew036.050. [[doi: 10.1093/ve/vew036.050](http
 
 Gomes MGM, Gjini E, Lopes JS, Souto-Maior C, Rebelo C.
 A theoretical framework to identify invariant thresholds in infectious disease epidemiology.
-_J Theor Biol._ *2016* 21;395:97-102. [[doi: 10.1016/j.jtbi.2016.01.029](https://dx.doi.org/10.1016/j.jtbi.2016.01.029)]
+_J Theor Biol._ **2016** 21;395:97-102. [[doi: 10.1016/j.jtbi.2016.01.029](https://dx.doi.org/10.1016/j.jtbi.2016.01.029)]
 
 
 Souto-Maior C, Lopes JS, Gjini E, Struchiner CJ, Teixeira L, Gomes MGM.
