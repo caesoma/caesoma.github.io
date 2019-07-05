@@ -41,6 +41,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+        match "LICENSE.md" $ do
+            route   idRoute
+            compile copyFileCompiler
+
     match (fromList ["sciprop.md", "publications.md"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
