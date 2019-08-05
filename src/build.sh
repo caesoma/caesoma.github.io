@@ -20,15 +20,15 @@
 # stack exec site build
 # stack exec site watch
 
-HOMEDIR=$1
+GITDIR=$1
 
 # Temporarily store uncommited changes
-cd $HOMEDIR/git/caesoma.github.io/src
+cd $GITDIR/caesoma.github.io/src
 #git stash
 
 # Verify correct branch
 git checkout develop
-cp -r $HOMEDIR/git/caesoma.github.io/src/ $HOMEDIR/git/caesomasrccopy/
+cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesomasrccopy/
 
 # git stage <modified files here>
 git stage .
