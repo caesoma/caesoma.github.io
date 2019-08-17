@@ -47,7 +47,7 @@ git checkout master # --track origin/master
 
 # Overwrite existing files with new files
 # cp -archive _site/. ../
-cp -a src/_site/ .
+cp -a src/_site/. .
 
 # Commit
 git stage -A
