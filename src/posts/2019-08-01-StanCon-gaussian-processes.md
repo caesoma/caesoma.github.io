@@ -17,14 +17,13 @@ Bayesian inference using Hamiltonian Monte Carlo offers a powerful tool to appro
 
 #### Gaussian Processes
 
-Gaussian processes (GPs) describe a series of observations correlated along some dimension (e.g. time); this correlation is given by a matrix specified by a kernel, which in turn can be a function for instance of the distance between time points (specified by the data), and a couple of free parameters or "hyperparameters" (which depends on the actual form of the kernel chosen) [Rasmussen and Williams Gaussian](http://www.gaussianprocess.org/gpml/).
+Gaussian processes (GPs) describe a series of observations correlated along some dimension (e.g. time); this correlation is given by a matrix specified by a kernel, which in turn can be a function for instance of the distance between time points (specified by the data), and a couple of free parameters or "hyperparameters" (which depends on the actual form of the kernel chosen) [[Rasmussen and Williams 2006](http://www.gaussianprocess.org/gpml/)].
 
 Therefore, a gaussian process is fully specified by a multivariate gaussian distribution \\( y \\sim \\mathcal{N}(\\mu, K) \\), where \\( \\mu \\) is the mean of the observation series, and \\( K \\) is its covariance matrix with entries \\( k_{ij} \\) specified by a kernel instead of independently specified for every pair of gaussian observations as is common otherwise. If there are \\( N \\) observations the matrix \\( K \\) has dimension \\( N \\times N \\).
 
 For an exponential quadratic kernel, the covariance of two entris of the matrix is given by:
 $$ k_{ij} = k(x_i,x_j) = \sigma^{2}_f exp \left( \frac{-|x_i-x_j|^2}{2\ell^2} \right) $$ and the gaussian process is given by \\(\\mathcal{GP} \\sim \\mathcal{N}(\\mu, K) \\). Here \\( \\ell \\) modulates the bandwidth of correlation between time points (hereafter "bandwidth hyperparameter") and \\( \\sigma^{2}_f \\) determines the variance of the observations (hereafter "signal variance hyperparameter").
-
-This can also be written as \\( k_{ij} = \\sigma_f^{2} c_{ij} \\), where \\( c_{ij} \\) is the correlation structure (as opposed to covariance).
+This can also be written as \\( k_{ij} = \\sigma_f^{2} c_{ij} \\), where \\( c_{ij} \\) is the correlation (as opposed to covariance) structure.
 
 The Gaussian Process observations are therefore a draw from the multivariate normal distribution \\( \\mathcal{GP} \\sim \\mathcal{N}(\\mu, K) \\).
 
@@ -33,13 +32,13 @@ The Gaussian Process observations are therefore a draw from the multivariate nor
 
 The description above is for a process, or "channel", that does not interact with other observations. If more than one channel is present, interactions between them can be modeled by a correlation structure that takes any "between-channel" covariance into account.
 
-This can be achieved by a Matrix Normal distribution, which is equivalent to a Kronecker product of a matrix of signal variances for all channel combinations and the correlation matrix \\( c_{ij} \\) [Bonilla _et al._](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction); however, this formulation assumes the parameters that specify \\( c_{ij} \\) are the same of all channels and channel combinations. This can be relaxed, and even different kernels may be combined [Melkumyan and Ramos](https://www.ijcai.org/Proceedings/11/Papers/238.pdf), but this means the gaussian process can no longer be written as a Matrix Normal, and instead each channel combination needs to be specified individually.
+This can be achieved by a Matrix Normal distribution, which is equivalent to a Kronecker product of a matrix of signal variances for all channel combinations and the correlation matrix \\( c_{ij} \\) [[Bonilla _et al._ 2007](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction)]; however, this formulation assumes the parameters that specify \\( c_{ij} \\) are the same of all channels and channel combinations. This can be relaxed, and even different kernels may be combined [[Melkumyan and Ramos 2011](https://www.ijcai.org/Proceedings/11/Papers/238.pdf)], but this means the gaussian process can no longer be written as a Matrix Normal, and instead each channel combination needs to be specified individually.
 
-For multiple channels , for instance, still using the exponential quadratic kernel, each channel has its own bandwidth parameter \\( \\ell_m \\), and each combination of channels their signal variance parameters \\( \\sigma^{2}_{mp} \\) (where the subscript _f_ was omitted for clarity), and each entry in the covariance matrix for this Gaussian Process is now given by:
+For multiple channels, for instance, still using the exponential quadratic kernel, each channel has its own bandwidth parameter \\( \\ell_m \\), and each combination of channels their signal variance parameters \\( \\sigma^{2}_{mp} \\) (where the subscript _f_ was omitted for clarity), and each entry in the covariance matrix for this Gaussian Process is now given by:
 
 $$ k_{mp}(x_{i},x_{j}) = \sigma^{2}_{mp} exp \left( \frac{-|x_{mi}-x_{pj}|^2}{\ell_m^2 + \ell_p^2} \right) $$
 
-For two channels (uncreatively called channels \\(1\\) and \\(2\\) ), for instance, \\( \\ell_m, m=1,2 \\),  \\( \\sigma^{2}_{mp}, m,p=(1,1),(1,2),(2,1), (2,2) \\), and two observations for each channel ( \\( N_1=2, N_2=2\\) ), the square \\( K \\) matrix has dimension \\( 4 \\) (the sum \\( (N_1 + N_2)\\) of the number of time points of both channels), and is given by:
+For two channels (uncreatively called channels \\(1\\) and \\(2\\) ), for instance, \\( \\{\\ell_m| m=1,2\\} \\),  \\( \\{\\sigma^{2}_{mp}| m,p=(1,1),(1,2),(2,1), (2,2)\\} \\), and two observations for each channel ( \\( N_1=2, N_2=2\\) ), the square \\( K \\) matrix has dimension \\( 4 \\) (the sum \\( (N_1 + N_2)\\) of the number of time points of both channels), and is given by:
 
 $$ K = \begin{bmatrix} \sigma^2_{11} \begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) \end{bmatrix} \sigma^2_{12} \begin{bmatrix} k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \end{bmatrix} \\ \sigma^2_{21} \begin{bmatrix} k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) \end{bmatrix} \sigma^2_{22} \begin{bmatrix} k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \end{bmatrix} \end{bmatrix} $$
 
@@ -62,14 +61,17 @@ For non-gaussian observations the likelihood cannot be computed directly, since 
 Therefore, given an approximation or sample of the unobserved gaussian observations, the GP function can be computed, and from that point on any likelihood distribution can be used on top of it to infer parameters based on the data that is actually observed.
 
 
-#### Stan implementation
+#### Data set and Stan implementation
 The model described above was implemented in Stan with the \\( \\ell_m \\) and \\( \\sigma^2_{mp} \\) parameters being sampled via _MCMC_, and the \\( K \\) matrix of size \\(MN \\times MN \\) matrix being assembled as described above. Standard gaussian variables, \\( \\tilde{f} \\) were also sampled, and the samples from the multivariate gaussian were computed by talking the Cholesky decomposition of \\(  K \\) (\\(  L \\)), and multiplying the vector of standard normal variables, the mean of the Gaussian Process was computed as \\( f = exp(\\mu + L \\cdot \\tilde{f}) \\). A negative binomial distribution was used, parameterized with the mean \\( f \\), and a free parameter \\( \\alpha \\) for the distribution's dispersion, or \\( y \\sim NegBinom2(f, \\alpha)\\) .
+
+The pseudodata set was simulated using the parameters from a preliminary joint inference from real RNA expression data from _Drosophila melanogaster_ over several generations of artificial selection [[Harbison _et al._ 2017](https://doi.org/10.1371/journal.pgen.1007098)]. A subset of 20 genes was selected and the parameters obtained at that point of the MCMC chain were used for simulation of these 20 channels over 13 time points.
 
 Inference was run for \\( 10^5\\) iterations using the HMC sampler with No U-Turn Sampling method and dense Euclidian metric.
 
 1. [Carl Edward Rasmussen, Christopher K.I. Williams Gaussian. Processes for Machine Learning. MIT Press. 2006.](http://www.gaussianprocess.org/gpml/)
-2. [Edwin V. Bonilla, Kian M. Chai, Christopher Williams](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction)
+2. [Edwin V. Bonilla, Kian M. Chai, Christopher Williams. Advances in Neural Information Processing Systems 20 (NIPS 2007)](https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction)
 3. [Arman Melkumyan, Fabio Ramos, IJCAI 2011, Proceedings of the 22nd International Joint Conference on Artificial Intelligence, Barcelona, Catalonia, Spain, July 16-22, 2011](https://www.ijcai.org/Proceedings/11/Papers/238.pdf)
+4. [Harbison ST, Serrano Negron YL, Hansen NF, Lobell AS (2017) Selection for long and short sleep duration in Drosophila melanogaster reveals the complex genetic network underlying natural variation in sleep. PLoS Genet 13(12): e1007098. 10.1371/journal.pgen.1007098](https://doi.org/10.1371/journal.pgen.1007098)
 
 <!-- [//]: # (comment) -->
 <!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
