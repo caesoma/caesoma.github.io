@@ -22,7 +22,7 @@ Gaussian processes (GPs) describe a series of observations correlated along some
 Therefore, a gaussian process is fully specified by a multivariate gaussian distribution \\( y \\sim \\mathcal{N}(\\mu, K) \\), where \\( \\mu \\) is the mean of the observation series, and \\( K \\) is its covariance matrix with entries \\( k_{ij} \\) specified by a kernel instead of independently specified for every pair of gaussian observations as is common otherwise. If there are \\( N \\) observations the matrix \\( K \\) has dimension \\( N \\times N \\).
 
 For an exponential quadratic kernel, the covariance of two entris of the matrix is given by:
-$$ k_{ij} = k(x_i,x_j) = \sigma^{2}_f exp \left( \frac{-|x_i-x_j|^2}{2\ell^2} \right) $$ and the gaussian process is given by \\(\\mathcal{GP} \\sim \\mathcal{N}(\\mu, K) \\). Here \\( \\ell \\) modulates the bandwidth of correlation between time points (hereafter "bandwidth hyperparameter") and \\( \\sigma^{2}_f \\) determines the variance of the observations (hereafter "signal variance hyperparameter").
+$$ k_{ij} = k(x_i,x_j) = \sigma^{2}_f exp \left( \frac{-|x_i-x_j|^2}{2\ell^2} \right) $$ and the gaussian process is given by \\(\\mathcal{GP} \\sim \\mathcal{N}(\\mu, K) \\). Here \\( \\ell \\) modulates the bandwidth of correlation between time points (hereafter "bandwidth hyperparameter") and \\( \\sigma_f^{2} \\) determines the variance of the observations (hereafter "signal variance hyperparameter").
 This can also be written as \\( k_{ij} = \\sigma_f^{2} c_{ij} \\), where \\( c_{ij} \\) is the correlation (as opposed to covariance) structure.
 
 The Gaussian Process observations are therefore a draw from the multivariate normal distribution \\( \\mathcal{GP} \\sim \\mathcal{N}(\\mu, K) \\).
