@@ -28,7 +28,7 @@ cd $GITDIR/caesoma.github.io/src
 
 # Verify correct branch
 git checkout develop
-cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesomasrccopy/
+cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/caesomasrccopy/
 
 # git stage <modified files here>
 git stage .
