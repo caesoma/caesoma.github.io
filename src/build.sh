@@ -28,11 +28,11 @@ cd $GITDIR/caesoma.github.io/src
 
 # Verify correct branch
 git checkout develop
-cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/caesomasrccopy/
+cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/copy
 
 # git stage <modified files here>
 git stage .
-git commit -m "shell build"
+git commit -m "hakyll build"
 git push origin develop
 
 # Build new files
