@@ -21,6 +21,7 @@
 # stack exec site watch
 
 GITDIR=$1
+COPY=$2
 
 # Temporarily store uncommited changes
 cd $GITDIR/caesoma.github.io/src
@@ -28,7 +29,9 @@ cd $GITDIR/caesoma.github.io/src
 
 # Verify correct branch
 git checkout develop
-cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/copy
+if [ $COPY = true ]; then
+    cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/copy
+fi
 
 # git stage <modified files here>
 git stage .
