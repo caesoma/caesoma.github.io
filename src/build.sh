@@ -31,6 +31,7 @@ cd $GITDIR/caesoma.github.io/src
 git checkout develop
 if [ $COPY = true ]; then
     cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/copy
+    rm -rf $GITDIR/caesoma.github.io/copy/.stack-work
 fi
 
 # git stage <modified files here>
