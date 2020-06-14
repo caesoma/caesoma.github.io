@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Random Interlude</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <ul>
+          <li><a href="../">main</a></li>
+  	      <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">archive</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+        <main role="main">
+            <h1>Random Interlude</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p><img src="../images/gaussiannoise.png" class="full-width"></p>
+<p>As I started to write this post I was at a conference where I saw some RNA-seq data; what I did not see was actual analysis of the data, just some clustering and then a zoom into the subset of “most interesting genes”. I can claim to have looked at some RNA-seq data and I know it is noisy, it looks like a snapshot of TV static except that instead of black and white people make it <a href="https://en.wikipedia.org/wiki/Gene_expression_profiling#/media/File:Heatmap.png">red-black-green</a> (or <a href="http://www.rna-seqblog.com/wp-content/uploads/2015/02/heatmap_osteoclast_Illustra.png">red-white-blue</a>, or <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3HqbIn4HfWhbjpl7d9KH5L3q69Y4MLMne9R3f_q_u1I5bvmR7">your favorite ugly combination of colors</a>). That is why standard analyses often use linear models (or the slightly more useful <a href="https://onlinecourses.science.psu.edu/stat504/node/216/">Generalized Linear Models</a>, with some more introduction <a href="https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_introreg_a0000000427.htm">here</a>). I have my issues with linear models which I will probably talk about in a different post, but they do allow testing for significance (also something I have issues with, but that I guess I won’t even discuss in writing). Clustering, on the other hand, just clusters; it may be useful to get organize very broad patterns in the data, but with no underlying model other than some simple distance-based metric it is not a reliable method to find relevant gene modules, much less to find specific genes.</p>
+<p>Possibly there’s an elegant demonstration of the relationship between some parametric statistical distribution and the resulting clustering based on Euclidean-<a href="http://mathworld.wolfram.com/Distance.html">distances</a>; I’m not going as far as to try to derive anything analytically. Instead I will give an example.</p>
+<p>Given 4 samples and the expression of ~10 thousand genes, you can cluster them based on their <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html">average distance</a>, the gene expression values are often centered at the gene (i.e. row) mean and scaled by their variance – if you are using R’s <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/heatmap.html">heatmap function</a> it is doing that by default (I did that using Python’s <a href="https://seaborn.pydata.org/generated/seaborn.clustermap.html">Seaborn</a>, although I’m more of a <a href="https://matplotlib.org/">matplotlib</a> person). The resulting heatmap is shown below:</p>
+<p><img src="../images/clustermap.png" class="textwidth"></p>
+<p>Without going into the meaning of the genes and sample labels, we can see some nicely formed clusters, and if we focus on the leftmost third, approximately, there are some clear non-overlapping clusters between samples:</p>
+<p><img src="../images/subclustermap.png" class="textwidth"></p>
+<p>This could indicate that there are genetic networks important for the function of interest, and looking into those maybe there are specific genes with predicted functions that could be tested for their functions.</p>
+<p>The problem with this is the actual data is simply \( y \sim \mathcal{N}(0, 1)\), a \(4 \times 10000 \) array of independent gaussian random draws, i.e. it is the best white noise no money can buy (but <a href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.normal.html">NumPy</a> can generate for free with a single Python command) plotted in some less ugly <a href="https://matplotlib.org/users/colormaps.html">“coolwarm” colormap</a>. The data before clustering, in the order the values were originally drawn, is shown below:</p>
+<p><img src="../images/clusterfuck.png" class="textwidth"></p>
+<p>So, I am not arguing cluster analysis is useless or that microarray or RNA-seq data are white noise, but I am showing that spurious patterns can be picked out of completely random data. That is more our fault than anything else, we expect to see patterns in our experiments based on our prior knowledge and our hypotheses; if we are not equipped to formulate and test those hypotheses properly only garbage will come out of these very expensive experiments.</p>
+<p>Nevertheless, the bigger problem is (hopefully) not drawing conclusions that can easily be shown to have no formal basis, but with methods that seem formal but are lacking in very serious ways; we need to see through those too, but often the ideas precede the ability to test them properly. I’m probably waxing too philosophical at this point, so I’m going to leave it at until I find more concrete example of that for a next post.</p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         September 30, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://medium.com/@caesoma">
+              <img src="../images/md.png" alt="medium" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://twitter.com/caesoma">
+              <img src="../images/tw.png" alt="twitter" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://gist.github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="../images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="../images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
