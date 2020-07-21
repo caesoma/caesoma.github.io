@@ -1,2 +1,8 @@
 .DS_Store
 src/
+src/_cache/
+src/_site/
+src/.stack-work/
+src/_drafts
+copy/
+copy/.stack-work
