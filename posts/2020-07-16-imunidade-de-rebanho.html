@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Luz no fim da 'imunidade de rebanho'?</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <ul>
+          <li><a href="../">main</a></li>
+  	      <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">archive</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+        <main role="main">
+            <h1>Luz no fim da 'imunidade de rebanho'?</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>Desde que o governo britânico decidiu usar a estratégia de imunidade de rebanho (e desistiu por que alguém que entende alguma coisa do assunto avisou a eles que isso não era estratégia coisa nenhuma) o assunto tem meio parado no ar. Nas últimas semanas o assunto voltou à baila com a publicação na revista <a href="https://www.sciencemag.org/">Science</a> de um dos preprints que meio começaram essa discussão há mais de dois meses: <a href="https://arxiv.org/abs/2005.03085">Britton et al. 2020</a>, além de <a href="https://www.medrxiv.org/content/10.1101/2020.04.27.20081893v3">Gomes et al. 2020</a>. Pra variar o assunto virou tema de polarização política, e a ciência ficou perdida no meio dos disse-me-disses, então aqui vai um resumo do que isos significa e não significa.</p>
+<p>O numero de novas infecções causadas por um indivíduo infectado (\(R_{eff}\)) depende do número de pessoas suscetíveis na população (\(S\)). À medida que a população se infecta, recupera e fica imune esse número diminui naturalmente.</p>
+<p>\begin{align} R_{eff} = R_0 \cdot S \end{align}</p>
+<p>Quando o número de pessoas suscetíveis é pequeno (a população imune é grande) o suficiente cada infectado transmite o vírus pra somente uma outra pessoa – esse é “o pico”. A partir daí o número de novos casos dimiui e uma hora a epidemia acaba.</p>
+<p>A proporção mínima da população que deve ser imune pra que isso aconteça é o limiar de imuniade de rebanho (“herd immunity threshold”, <em>HIT</em>), que é geralmente usado no contexto de vacinação. Na forulação mais básica, a expressão matemática pra esse limiar é:</p>
+<p>\begin{align} HIT &amp;= \frac{R_0-1}{R_0} \\ &amp;= 1 - \frac{1}{R_0} \end{align}</p>
+<p>Esse valor não é uma definição, é uma consequência da análise da dinâmica de um dos modelos mais básicos de transmissão. Pra um valor de \(R_0 \approx 2.4\) temos \( HIT \approx 60% \) aproximadamente e como não existe vacina pra SARS-CoV-2 só é possível chegar a esse limiar com infecções reais e gente morrendo.</p>
+<p>Esse modelo basicão, como todo modelo, tem premissas que permitem a suas construção e análise (o fazem tratável, na linguagem dos matemáticos). Uma dessas premissas é que todo mundo tem contato com todo mundo, todo mundo é igualmente suscetível – ou seja, a população é homogênea. No mundo real algumas pessoas tem mais contatos que outras e/ou são mais suscetíveis que outras – a população é heterogênea. Um modelo menos básico pode descrever isso, e uma das consequências é um pico e um <em>HIT</em> mais baixos (por exemplo os 20-40% que andaram rolando por aí).</p>
+<p>Esse é o resumo de alguns artigos recentes: modelo mais realista, HIT mais baixo. A explicação mais simples pra esse fenômeno é que os grupos mais expostos se infectam mais rápido e transmissão diminui mais cedo. Além disso, é importante lembrar que esse limiar é a fração quando a epidemia começa a diminuir, não a fração final infectada. Dependendo das premissas do modelo (olha elas aí de novo, gente) a fração esperada pode bem mais alta, e a mortalidade total também.</p>
+<p>Então, com essas ideas tem algumas consequências, por exemplo, o “achatamento da curva” pode ser visto como uma redução no <em>HIT</em>, que reduz o pico e a quantidade total de infectados – essa ideia tá implícita numa matéria recente do <a href="https://www.theatlantic.com/health/archive/2020/07/herd-immunity-coronavirus/614035/">The Atlantic</a>. A segunda onda é o “desachatamento da curva”: quando você aumenta o \(R_0\) o <em>HIT</em> aumenta e a incidência volta a aumentar. Num modelo heterogêneo isso também acontece, mas é mais complicado por que não temos só um parâmetro que muda (menor distanciamento, maior transmissão), mas uma rede de contatos complexa, e dependendo de como essa rede se reorgnaiza com o relaxamento a população pode voltar a uma situação parecida à de antes ou não.</p>
+<p>Resumindo, descrever uma epidemia é uma tarefa complexa, e o papel do modelo matemático não é representar a realidade completa, mas aspectos úteis do processo. Entender esses aspectos premite prever o impacto de diferentes intervenções. A gente discute essas ideias no <a href="https://ministeriodaciencia.github.io/posts/2020-07-21-cant-touch-this.html">episódio 6</a> do podcast <a href="https://ministeriodaciencia.github.io/ouca.html">Ministério da Ciência</a></p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         July 20, 2020
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://medium.com/@caesoma">
+              <img src="../images/md.png" alt="medium" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://twitter.com/caesoma">
+              <img src="../images/tw.png" alt="twitter" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://gist.github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="../images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="../images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
