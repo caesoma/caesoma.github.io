@@ -46,9 +46,13 @@ _PLoS Comput Biol_ **2014**;10:e1003773. [[doi: 10.1371/journal.pcbi.1003773](ht
 [[code](https://github.com/dpessoaIGC/Dose-Invariant_Susceptibility_Estimator)]
 
 ### preprints
-Caetano Souto-Maior
+Souto-Maior C.
 Multiple-serotype models of dengue virus transmission: simulation study and perspectives for the application of inference in epidemiological surveillance
 _bioRxiv_ **2019**:583351; [[doi: 10.1101/583351](https://doi.org/10.1101/583351)]
+
+Gomes MGM, Corder RM, King JG, Langwig KE, Souto-Maior C, Carneiro J, Penha-Goncalves C,  Ferreira MU, Aguas R.
+Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold
+_medRxiv_ **2020**:20081893; [[doi: 10.1101/2020.04.27.20081893](https://doi.org/10.1101/2020.04.27.20081893)]
 
 ### book chapters and others
 Souto-Maior C.
