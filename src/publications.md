@@ -59,9 +59,8 @@ _PLoS Comput Biol_ **2014**;10:e1003773.
 Gomes MGM, Corder RM, King JG, Langwig KE, Souto-Maior C, Carneiro J, Penha-Goncalves C,  Ferreira MU, Aguas R.
 Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold
 _medRxiv_ **2020**:20081893; [[doi: 10.1101/2020.04.27.20081893](https://doi.org/10.1101/2020.04.27.20081893)]
-Souto-Maior C.
 
-Multiple-serotype models of dengue virus transmission: simulation study and perspectives for the application of inference in epidemiological surveillance
+Souto-Maior C. Multiple-serotype models of dengue virus transmission: simulation study and perspectives for the application of inference in epidemiological surveillance
 _bioRxiv_ **2019**:583351; [[doi: 10.1101/583351](https://doi.org/10.1101/583351)]
 
 ### book chapters and others
