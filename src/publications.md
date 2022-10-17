@@ -14,13 +14,20 @@ p {
 
 ### publications in scientific journals
 
+Souto-Maior C. "Extraordinarily corrupt or statistically commonplace? Reproducibility crises may stem from a lack of understanding of outcome probabilities". _Phil Sci Archive_ **2022**
+
+Gomes MGM, FerreiraMU, Corder RM, King JG, Souto-Maior C, Penha-GonçalvesC, Gonçalves G, Chikina M, Pegden W, Aguas R. "Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold". _Journal of theoretical biology_ **2022**;540: 111063. [[doi: 10.1016/j.jtbi.2022.111063](https://doi.org/10.1016/j.jtbi.2022.111063)]
+(_medRxiv_ **2020** 2020.04.27.20081893; [[doi: 10.1101/2020.04.27.20081893](https://doi.org/10.1101/2020.04.27.20081893))
+
+Soto-Maior C, Lin Y, Serrano Negron YL, Harbison ST. "Multiple shifts in gene network interactions shape phenotypes of Drosophila melanogaster selected for long and short night sleep duration". _bioRxiv_ **2021**; 2021.07.11.451943. [[doi: 10.1101/2021.07.11.451943](https://doi.org/10.1101/2021.07.11.451943)]
+
 Souto-Maior C, King, JG, Sartori LM, Maciel-de-Freitas R, Gomes MGM. Reply to: “Enhancement of Aedes aegypti susceptibility to dengue by Wolbachia is not supported”. _Nature Comunications_ **2020**;11: 6113.
 [[doi: 10.1038/s41467-020-19831-5](https://doi.org/10.1038/s41467-020-19831-5)]
 
 Souto-Maior C, Serrano Negron, YL Harbison ST. Natural selection on sleep duration in _Drosophila melanogaster_. _Scientific Reports_ **2020**;10: 20652.
 [[doi: 10.1038/s41598-020-77680-0](https://doi.org/10.1038/s41598-020-77680-0)]
 
-King J<sup>§</sup>, Souto-Maior C<sup>§</sup>, Sartori L, Maciel-de-Freitas R, Gomes MGM.
+King JG<sup>§</sup>, Souto-Maior C<sup>§</sup>, Sartori L, Maciel-de-Freitas R, Gomes MGM.
 Variation in _Wolbachia_ effects on _Aedes_ mosquitoes as a determinant of invasiveness and vectorial capacity.
 _Nature Communications_ **2018**;9: 1483.
 [[doi: 10.1038/s41467-018-03981-8](https://doi.org/10.1038/s41467-018-03981-8)]
