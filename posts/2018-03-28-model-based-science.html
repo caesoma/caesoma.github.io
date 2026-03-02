@@ -16,14 +16,19 @@
             <a href="/">Hakyll Blog</a>
         </div> -->
       <nav>
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
           <li><a href="../">main</a></li>
-  	      <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
           <li><a href="../publications.html">publications</a></li>
           <li><a href="../archive.html">blog</a></li>
         </ul>
-      </nav>
-    </header>
+      </nav>    </header>
     <body>
         <main role="main">
             <h1>Model-based inference in experimental science</h1>
@@ -31,10 +36,14 @@
     <section class="header">
     </section>
     <section>
-        <p>There seemed to be a split between theoretical and experimental science back when I was a chemistry undergrad over ten years ago. Even then I got to both work in an inorganic chemistry wet lab, and apply the theory of quantum mechanics to spectroscopy and molecular structure calculations, but the split was there. The same thing was there between health/medical statisticians working on epidemiological problems and clinicians, as well as in biology more recently as a finished my Ph.D. work and began working in a quantitative genetics lab. I assume this thing has been there for a long time – maybe people who are not mathematically inclined did not hate <a href="http://mathworld.wolfram.com/BhaskarasFormula.html">Bhaskara’s Formula</a> at the time it was developed just as much as they do today – but I’m sure it’s been quite long. That is one of the reasons I normally introduce myself as a computational biologist; situates me on the left side of the spectrum right of computer scientists and bioinformaticians, a little left from quantitative geneticists, maybe; however, given my diverse background, I prefer to see myself just as a scientist who happens to think mathematical models are a powerful approach to explain complex systems and data.</p>
+        <p>There seemed to be a split between theoretical and experimental science back when I was a chemistry undergrad over ten years ago. Even then I got to both work in an inorganic chemistry wet lab, and apply the theory of quantum mechanics to spectroscopy and molecular structure calculations, but the split was there. The same thing was there between health/medical statisticians working on epidemiological problems and clinicians, as well as in biology more recently as a finished my Ph.D. work and began working in a quantitative genetics lab.
+I assume this thing has been there for a long time – maybe people who are not mathematically inclined did not hate <a href="http://mathworld.wolfram.com/BhaskarasFormula.html">Bhaskara’s Formula</a> at the time it was developed just as much as they do today – but I’m sure it’s been quite long.
+That is one of the reasons I normally introduce myself as a computational biologist; situates me on the left side of the spectrum right of computer scientists and bioinformaticians, a little left from quantitative geneticists, maybe; however, given my diverse background, I prefer to see myself just as a scientist who happens to think mathematical models are a powerful approach to explain complex systems and data.</p>
 <p>More generally, it is widely believed (<em>whoa, such a strong language for a scientific discussion!</em>) that there’s such thing as model-free analysis, and that some scientists like to tinker with models more than do rigorous experiments – which is what would separate mathematical biologists or bioinformaticians from actual biologists. I argue the interaction of theory and experiment has been the only real way for science to be both conceptualized and tested through the centuries, and putting efforts into formal descriptions of the model in detriment of a greater volume of experiments is no waste. Again, there is no such thing as model-free science, and every researcher has to balance resources into the different parts of a scientific project, which includes the analysis of quantitative data.</p>
-<p>I don’t argue that sophisticated analysis is always applicable to any problem or data, but I argue that the need for quantitative models is likely proportional to the complexity and/or size of the system, and that they reveal features that are <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0020439">otherwise invisible</a>. I also argue that they are always there, in simpler or more sophisticated, more or less parametric forms, and that knowing how they work is knowledge as important as the core principles of physics, chemistry, or biology (sometimes, as in quantum mechanics, they <em>are</em> the core concepts).</p>
-<p>The things I’ll write about in these posts are not about methods <em>per se</em> (I’m not a computer scientists or a programmer), they are not on modeling (I’m not a mathematician or statistician by training either). This is not a page on biology specifically, although this is what I chose to work on because I thought these were some of the most interesting scientific problems out there. It just may be a blog on the interface of different disciplines to try to approach problems in different ways, and how quantitative models (and conceptual models more generally) help doing that.</p>
+<p>I don’t argue that sophisticated analysis is always applicable to any problem or data, but I argue that the need for quantitative models is likely proportional to the complexity and/or size of the system, and that they reveal features that are <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0020439">otherwise invisible</a>.
+I also argue that they are always there, in simpler or more sophisticated, more or less parametric forms, and that knowing how they work is knowledge as important as the core principles of physics, chemistry, or biology (sometimes, as in quantum mechanics, they <em>are</em> the core concepts).</p>
+<p>The things I’ll write about in these posts are not about methods <em>per se</em> (I’m not a computer scientists or a programmer), they are not on modeling (I’m not a mathematician or statistician by training either). This is not a page on biology specifically, although this is what I chose to work on because I thought these were some of the most interesting scientific problems out there.
+It just may be a blog on the interface of different disciplines to try to approach problems in different ways, and how quantitative models (and conceptual models more generally) help doing that.</p>
 <!-- [//]: # (comment) -->
 
         <code>
@@ -49,27 +58,27 @@
 
         <footer>
           <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
             <li><a href="https://orcid.org/0000-0002-0271-2576">
               <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
             </a></li>
-            <li><a href="https://medium.com/@caesoma">
-              <img src="../images/md.png" alt="medium" style="width:42px;height:42px;border:0;">
-            </a></li>
-            <li><a href="https://twitter.com/caesoma">
-              <img src="../images/tw.png" alt="twitter" style="width:42px;height:42px;border:0;">
-            </a></li>
-            <li><a href="https://gist.github.com/caesoma">
+            <li><a href="https://github.com/caesoma">
               <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
-            </a></li>
-            <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
-              <img src="../images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
-            </a></li>
-            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
-              <img src="../images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
-            </a></li>
+            </a></li>            
             <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
               <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
             </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
         </ul>
 
           <p>
