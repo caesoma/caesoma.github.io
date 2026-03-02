@@ -58,6 +58,14 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
+    -- Rule to generate the RSS feed
+    create ["rss.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` bodyField "description"
+            posts <- recentFirst =<< loadAll "posts/*"
+            renderRss feedConfiguration feedCtx posts
+
     create ["archive.html"] $ do
         route idRoute
         compile $ do
@@ -71,7 +79,6 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
-
 
     match "index.html" $ do
         route idRoute
@@ -89,6 +96,15 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateBodyCompiler
 
+-- Define the feed configuration
+feedConfiguration :: FeedConfiguration
+feedConfiguration = FeedConfiguration
+    { feedTitle       = "caesoma's personal blog"
+    , feedDescription = "caesoma hakyll rss feed"
+    , feedAuthorName  = "Caetano Souto Maior"
+    , feedAuthorEmail = "caetano@auroracollective.io"
+    , feedRoot        = "https://caesoma.github.io"
+    }
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
