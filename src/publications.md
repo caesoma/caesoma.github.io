@@ -14,6 +14,10 @@ p {
 
 ### publications in scientific journals
 
+**16.** Souto-Maior C. "Extraordinarily corrupt or statistically commonplace? Reproducibility crises may stem from a lack of understanding of outcome probabilities". _PeerJ_ **2025** 13:e18972 [[doi: 10.7717/peerj.18972](https://doi.org/10.7717/peerj.18972)]
+
+**15.** Souto-Maior C, Lin Y, Serrano Negron YL, Harbison ST. "Multiple shifts in gene network interactions shape phenotypes of Drosophila melanogaster selected for long and short night sleep duration". _PLOS Computational Biology_ **2023** 19(8):e1011389 [[doi: 10.1371/journal.pcbi.1011389](https://doi.org/10.1371/journal.pcbi.1011389)].
+
 **14.** Gomes MGM, Ferreira MU, Corder RM, King JG, Souto-Maior C, Penha-Gonçalves C, Gonçalves G, Chikina M, Pegden W, Aguas R. "Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold". _Journal of theoretical biology_ **2022**;540: 111063. [[doi: 10.1016/j.jtbi.2022.111063](https://doi.org/10.1016/j.jtbi.2022.111063)]
 
 **13.** Souto-Maior C, King, JG, Sartori LM, Maciel-de-Freitas R, Gomes MGM. Reply to: “Enhancement of Aedes aegypti susceptibility to dengue by Wolbachia is not supported”. _Nature Comunications_ **2020**;11: 6113.
