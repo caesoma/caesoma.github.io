@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>caesoma's personal blog</title>
+        <link>https://caesoma.github.io</link>
+        <description><![CDATA[caesoma hakyll rss feed]]></description>
+        <atom:link href="https://caesoma.github.io/rss.xml" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>Mon, 20 Jul 2020 00:00:00 UT</lastBuildDate>
+        <item>
+    <title>Luz no fim da 'imunidade de rebanho'?</title>
+    <link>https://caesoma.github.io/posts/2020-07-16-imunidade-de-rebanho.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Luz no fim da 'imunidade de rebanho'?</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Luz no fim da 'imunidade de rebanho'?</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>Desde que o governo britânico decidiu usar a estratégia de imunidade de rebanho (e desistiu por que alguém que entende alguma coisa do assunto avisou a eles que isso não era estratégia coisa nenhuma) o assunto tem meio parado no ar. Nas últimas semanas o assunto voltou à baila com a publicação na revista <a href="https://www.sciencemag.org/">Science</a> de um dos preprints que meio começaram essa discussão há mais de dois meses: <a href="https://arxiv.org/abs/2005.03085">Britton et al. 2020</a>, além de <a href="https://www.medrxiv.org/content/10.1101/2020.04.27.20081893v3">Gomes et al. 2020</a>. Pra variar o assunto virou tema de polarização política, e a ciência ficou perdida no meio dos disse-me-disses, então aqui vai um resumo do que isos significa e não significa.</p>
+<p>O numero de novas infecções causadas por um indivíduo infectado (\(R_{eff}\)) depende do número de pessoas suscetíveis na população (\(S\)). À medida que a população se infecta, recupera e fica imune esse número diminui naturalmente.</p>
+<p>\begin{align}
+R_{eff} = R_0 \cdot S
+\end{align}</p>
+<p>Quando o número de pessoas suscetíveis é pequeno (a população imune é grande) o suficiente cada infectado transmite o vírus pra somente uma outra pessoa – esse é “o pico”. A partir daí o número de novos casos dimiui e uma hora a epidemia acaba.</p>
+<p>A proporção mínima da população que deve ser imune pra que isso aconteça é o limiar de imuniade de rebanho (“herd immunity threshold”, <em>HIT</em>), que é geralmente usado no contexto de vacinação. Na forulação mais básica, a expressão matemática pra esse limiar é:</p>
+<p>\begin{align}
+HIT &amp;= \frac{R_0-1}{R_0} \\
+&amp;= 1 - \frac{1}{R_0}
+\end{align}</p>
+<p>Esse valor não é uma definição, é uma consequência da análise da dinâmica de um dos modelos mais básicos de transmissão. Pra um valor de \(R_0 \approx 2.4\) temos \( HIT \approx 60% \) aproximadamente e como não existe vacina pra SARS-CoV-2 só é possível chegar a esse limiar com infecções reais e gente morrendo.</p>
+<p>Esse modelo basicão, como todo modelo, tem premissas que permitem a suas construção e análise (o fazem tratável, na linguagem dos matemáticos). Uma dessas premissas é que todo mundo tem contato com todo mundo, todo mundo é igualmente suscetível – ou seja, a população é homogênea. No mundo real algumas pessoas tem mais contatos que outras e/ou são mais suscetíveis que outras – a população é heterogênea. Um modelo menos básico pode descrever isso, e uma das consequências é um pico e um <em>HIT</em> mais baixos (por exemplo os 20-40% que andaram rolando por aí).</p>
+<p>Esse é o resumo de alguns artigos recentes: modelo mais realista, HIT mais baixo. A explicação mais simples pra esse fenômeno é que os grupos mais expostos se infectam mais rápido e transmissão diminui mais cedo. Além disso, é importante lembrar que esse limiar é a fração quando a epidemia começa a diminuir, não a fração final infectada. Dependendo das premissas do modelo (olha elas aí de novo, gente) a fração esperada pode bem mais alta, e a mortalidade total também.</p>
+<p>Então, com essas ideas tem algumas consequências, por exemplo, o “achatamento da curva” pode ser visto como uma redução no <em>HIT</em>, que reduz o pico e a quantidade total de infectados – essa ideia tá implícita numa matéria recente do <a href="https://www.theatlantic.com/health/archive/2020/07/herd-immunity-coronavirus/614035/">The Atlantic</a>. A segunda onda é o “desachatamento da curva”: quando você aumenta o \(R_0\) o <em>HIT</em> aumenta e a incidência volta a aumentar. Num modelo heterogêneo isso também acontece, mas é mais complicado por que não temos só um parâmetro que muda (menor distanciamento, maior transmissão), mas uma rede de contatos complexa, e dependendo de como essa rede se reorgnaiza com o relaxamento a população pode voltar a uma situação parecida à de antes ou não.</p>
+<p>Resumindo, descrever uma epidemia é uma tarefa complexa, e o papel do modelo matemático não é representar a realidade completa, mas aspectos úteis do processo. Entender esses aspectos premite prever o impacto de diferentes intervenções.
+A gente discute essas ideias no <a href="https://ministeriodaciencia.github.io/posts/2020-07-21-cant-touch-this.html">episódio 6</a> do podcast <a href="https://ministeriodaciencia.github.io/ouca.html">Ministério da Ciência</a></p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         July 20, 2020
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Mon, 20 Jul 2020 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2020-07-16-imunidade-de-rebanho.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Are we solving the most pressing scientific issues in mathematical modeling of Coronavirus? (for the most part no, we are not)</title>
+    <link>https://caesoma.github.io/posts/2020-06-13-coronavirus.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Are we solving the most pressing scientific issues in mathematical modeling of Coronavirus? (for the most part no, we are not)</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Are we solving the most pressing scientific issues in mathematical modeling of Coronavirus? (for the most part no, we are not)</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>Since the beginning of the Coronavirus pandemic there has been a myriad, a plethora, or better said a shit-ton of papers on the topic. It comes in all sorts and shapes, with varying quality and utility. Given its immediate importance there have also been a lot of discussion (and quite a bit of shouting) on their interpretation and consequences for public health policy. One prominent example is around the epidemiological concept of <a href="https://twitter.com/ArisKatzourakis/status/1271209625157881857?s=20"><em>herd immunity</em></a>, which at some point was suggested as a “strategy” to tackle the epidemics in countries like the UK and Sweden.</p>
+<p>To be clear, I am strongly in favor of distancing measures and – in the absence of absolutely flawless test/tracing – lockdowns, It’s the only real tool available. I also strongly oppose <em>herd immunity</em> as a “strategy”, and think we are likely not close nor should count on it. That’s a strictly epidemiological opinion. I have my own personal opinions about the impact on the economy and society, the protests, and other non-public health aspects of the pandemic, but that’s beyond my expertise and won’t get into that.</p>
+<p>That said, I believe there’s very little debate of actual scientific questions around the pandemic, including herd immunity. For the most part there’s the stuff we already knew, there’s straightforward application of fundamental principles, and then there’s the crazies. The crazies are people that for whatever reason, usually political, will seek out information that confirms what they wish to be true, and don’t care about (and are often not qualified for) a rational discussion of the body of knowledge available.</p>
+<p>Now because of the crazies, many prestigious scientists/instant subcelebrities are doing basic shit so we can justify stuff we already know: avoid contact with infected people, wear masks just in case, keep track of transmission routes, incidence rates, etc. That’s not the reserach topic of mathematical epideimologists. That kind of work should probably be done by the WHO or national public health agencies like the CDC of deparments/ministries of health (or commissioned by them), if they had dedicated funding. Maybe the UK is who has something closest to this (SAGE), and maybe that’s why some early work on epidemic forecast came from there.</p>
+<p>The British reports in late March were basic modeling, <a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-12-global-impact-covid-19/">reused some code</a> and then provided some <a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-13-europe-npi-impact/">initial estimates</a> of intervention impact. It’s not brilliant work, but it’s what was needed at the time. I argued against unfair criticism of this work and the crazies. Also, at this point other herd immunity studies were taken out of context, while some apparently respectable researchers decided really try to get data that showed it was close, but that’s not novel science either.</p>
+<p>At this point, however, it’s been nearly 3 months, and we need better assessments of the epidemic, so novel means whatever helps us “solve” this as fast as possible. The flip side is that there’s also the need not to feed the crazies and cause worst case scenarios (see Brazil) 9/n</p>
+<p>That has led to things like <a href="https://www.pnas.org/content/early/2020/06/10/2009637117">this nonsense</a>, and the The Lancet <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-67362031357-X/fulltext">herd immunity assessment</a>, which does no more than say the percentages of people positive for Coronavirus antibody is lower than the 70% expected from the most simplistic models used so far.</p>
+<p>We published work that showed a potentially more optimistic scenario (how optimistic depends on the quantification of parameters that are still mostly unknown), and I knew it would probably be used by the crazies, so I tried to be as nuanced as possible about its <a href="https://twitter.com/caesoma/status/1257762721317224448?s=20">context</a>. However, it’s been really hard to get past the <em>standard narrative/don’t feed the crazies</em> polarization so somethings just don’t go into the discussion. Happens all the time in science, just now it’s more deadly. The bigger problem is (at least some fraction of) people are not stupid, and even if they don’t have scientific training they can see that some work gets more attention for no reason, and it’s usually what fits the preferred narrative. That undermines the credibility of science and scientists as a whole.</p>
+<p>Another byproduct of the urgency of this situation is that it’s a great time to pad your resume with publications in unwarrantedly-named <em>high-impact journals</em> (Science, Nature, the Lancet, NEJM, PNAS), as long as you already have currency with the community and editors, and pat yourself in the back with how important your research is. All of that without the needed to actually tackle the most important/useful questions for the pandemic policy. That also always happened, just now it’s more fucked up.</p>
+<p>So what are the most pressing scientific issues and debates around the mathematical modeling of Coronavirus/COVID-19? The same as before the pandemic, as long as they are also useful for guiding the best pandemic response in real time. But we are not debating those, we’re just doing the work we already did, building our resumes, and letting the power structures keep science boring and dominated by the same people. It’s just academia being the
+projection of the rotten structures and incentives also seen in the society in general.</p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         June 14, 2020
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Sun, 14 Jun 2020 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2020-06-13-coronavirus.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>StanCon 2019 -- Multi-channel Gaussian Processes as flexible alternatives to linear models: perspectives and challenges to scaling up Bayesian inference to genomic-scale data</title>
+    <link>https://caesoma.github.io/posts/2019-08-01-StanCon-gaussian-processes.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - StanCon 2019 -- Multi-channel Gaussian Processes as flexible alternatives to linear models: perspectives and challenges to scaling up Bayesian inference to genomic-scale data</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>StanCon 2019 -- Multi-channel Gaussian Processes as flexible alternatives to linear models: perspectives and challenges to scaling up Bayesian inference to genomic-scale data</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <h3 id="abstract">Abstract</h3>
+<p>“Omics” data are now routinely produced in labs around the world, but extracting meaningful results from them remains a challenge. The lack of knowledge about the interactions between gene products precludes scientists from formulating mechanistic models of gene network regulations, and the size of the data sets (commonly with thousands of readouts per sample for RNA or protein readouts) hampers exploration of patterns in the data. For transcriptomic data (i.e. RNA transcript counts), a commonly applied pipeline relies on linear model analysis of each gene, where the predictors are experimental conditions such as genotype (e.g. mutant vs wild type), environmental variables (temperature, food availability), or time. This approach solves the problem of data set size by breaking down the problem into thousands of linear regressions with parameters that can be easily estimated; however, it assumes not only that any trends are linear but also independence between genes. Additionally, the coefficients in the model have essentially no biological meaning.</p>
+<p>Gaussian processes are flexible models for stochastic processes that can describe nonlinear trends in the data along some dimension, like time, for instance. Their structure also allows the kernel-defined covariance matrix to be extended to multiple channels (e.g. genes) and therefore estimate the degree of interaction between them without need of previous knowledge of which genes actually interact. The caveat of this approach is the number signal covariance parameters – given by the number of pairwise combinations, which is on the order of the square of M, the number of channels – and the size of the covariance matrix itself, a square matrix of size MN which may need to be inverted or decomposed – where N is the number of time points.</p>
+<p>Bayesian inference using Hamiltonian Monte Carlo offers a powerful tool to approach this inference problem, but the high dimensionality of the parameter space and the costly computations limit its scalability to a number of channels M in the order of the tens instead of thousands. Here we show the results of a simulation study scaling up a multi-channel Gaussian from \(M=2\) up to \(M=85\) channels, showing the limitations of scaling up this approach in terms of speed, effective number of samples, accuracy and precision of estimation – based on these criteria we assess the feasibility of this joint estimation compared to multiple separate inference for all possible pairs, and discuss the caveats. We also show result of the model applied to transcriptomic data of Drosophila melanogaster artificially selected to be extreme sleepers.</p>
+<h3 id="methods">Methods</h3>
+<h4 id="gaussian-processes">Gaussian Processes</h4>
+<p>Gaussian processes (GPs) describe a series of observations correlated along some dimension (e.g. time); this correlation is given by a matrix specified by a kernel, which in turn can be a function for instance of the distance between time points (specified by the data), and a couple of free parameters or “hyperparameters” (which depends on the actual form of the kernel chosen) [<a href="http://www.gaussianprocess.org/gpml/">Rasmussen and Williams 2006</a>].</p>
+<p>Therefore, a gaussian process is fully specified by a multivariate gaussian distribution \( y \sim \mathcal{N}(\mu, K) \), where \( \mu \) is the mean of the observation series, and \( K \) is its covariance matrix with entries \( k_{ij} \) specified by a kernel instead of independently specified for every pair of gaussian observations as is common otherwise. If there are \( N \) observations the matrix \( K \) has dimension \( N \times N \).</p>
+<p>For an exponential quadratic kernel, the covariance of two entris of the matrix is given by:
+<span class="math display">$$ k_{ij} = k(x_i,x_j) = \sigma^{2}_f exp \left( \frac{-|x_i-x_j|^2}{2\ell^2} \right) $$</span> and the gaussian process is given by \(\mathcal{GP} \sim \mathcal{N}(\mu, K) \). Here \( \ell \) modulates the bandwidth of correlation between time points (hereafter “bandwidth hyperparameter”) and \( \sigma_f^{2} \) determines the variance of the observations (hereafter “signal variance hyperparameter”).
+This can also be written as \( k_{ij} = \sigma_f^{2} c_{ij} \), where \( c_{ij} \) is the correlation (as opposed to covariance) structure.</p>
+<p>The Gaussian Process observations are therefore a draw from the multivariate normal distribution \( \mathcal{GP} \sim \mathcal{N}(\mu, K) \).</p>
+<h4 id="multi-channel-gaussian-processes">Multi-channel Gaussian Processes</h4>
+<p>The description above is for a process, or “channel”, that does not interact with other observations. If more than one channel is present, interactions between them can be modeled by a correlation structure that takes any “between-channel” covariance into account.</p>
+<p>This can be achieved by a Matrix Normal distribution, which is equivalent to a Kronecker product of a matrix of signal variances for all channel combinations and the correlation matrix \( c_{ij} \) [<a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction">Bonilla <em>et al.</em> 2007</a>]; however, this formulation assumes the parameters that specify \( c_{ij} \) are the same of all channels and channel combinations. This can be relaxed, and even different kernels may be combined [<a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Melkumyan and Ramos 2011</a>], but this means the gaussian process can no longer be written as a Matrix Normal, and instead each channel combination needs to be specified individually.</p>
+<p>For multiple channels, for instance, still using the exponential quadratic kernel, each channel has its own bandwidth parameter \( \ell_m \), and each combination of channels their signal variance parameters \( \sigma^{2}_{mp} \) (where the subscript <em>f</em> was omitted for clarity), and each entry in the covariance matrix for this Gaussian Process is now given by:</p>
+<p><span class="math display">$$ k_{mp}(x_{i},x_{j}) = \sigma^{2}_{mp} exp \left( \frac{-|x_{mi}-x_{pj}|^2}{\ell_m^2 + \ell_p^2} \right) $$</span></p>
+<p>For two channels (uncreatively called channels \(1\) and \(2\) ), for instance, \( \{\ell_m| m=1,2\} \), \( \{\sigma^{2}_{mp}| m,p=(1,1),(1,2),(2,1), (2,2)\} \), and two observations for each channel ( \( N_1=2, N_2=2\) ), the square \( K \) matrix has dimension \( 4 \) (the sum \( (N_1 + N_2)\) of the number of time points of both channels), and is given by:</p>
+<p><span class="math display">$$ K = \begin{bmatrix} \sigma^2_{11} \begin{bmatrix} k_{11}(x_{11},x_{11}) &amp; k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) &amp; k_{11}(x_{12},x_{12}) \end{bmatrix} \sigma^2_{12} \begin{bmatrix} k_{12}(x_{11},x_{21}) &amp; k_{12}(x_{11},x_{22}) \\ k_{12}(x_{12},x_{21}) &amp; k_{12}(x_{12},x_{22}) \end{bmatrix} \\ \sigma^2_{21} \begin{bmatrix} k_{21}(x_{21},x_{11}) &amp; k_{21}(x_{21},x_{12}) \\ k_{21}(x_{22},x_{11}) &amp; k_{21}(x_{22},x_{12}) \end{bmatrix} \sigma^2_{22} \begin{bmatrix} k_{22}(x_{21},x_{21}) &amp; k_{22}(x_{21},x_{22}) \\ k_{22}(x_{22},x_{21}) &amp; k_{22}(x_{22},x_{22}) \end{bmatrix} \end{bmatrix} $$</span></p>
+<p>More generally, for \( M \) channels the dimension of the matrix is \( \sum_i^M N_i \) (if all channels have the same number of observations the matrix will have size \( MN \times MN \) ).</p>
+<p>To complete the multivariate gaussian distribution, the means are given by a concatenation of the means for each observation for each channel \(n, \mu = vec(Y) = [\mu_1, \mu_2, …, \mu_n]^T\).</p>
+<h4 id="likelihood-of-non-gaussian-observations">Likelihood of non-gaussian observations</h4>
+<p>Normally distributed observations of a Gaussian Process with variance \( \sigma_n^2 \) have log-likelihood given by the following expression:</p>
+<p><span class="math display">$$ log\ p(\mathbf{y}|X) = -\frac{1}{2} \mathbf{y}^T(K+\sigma_n^2I)^{-1}\mathbf{y} - \frac{1}{2}log|K+\sigma_n^2I| - \frac{n}{2}log 2\pi $$</span></p>
+<p>which is simply the logarithm of the probability density from the multivariate normal distribution.</p>
+<p>For non-gaussian observations the likelihood cannot be computed directly, since the Gaussian Process function depends on the gaussian observations drawn, which are not available. Instead the latter must be approximated or, under a Bayesian framework, sampled – this is sometimes called Gaussian Process Classification (GPC) because it is often applied to categorical variables, but it actually applies to any distribution other than the normal, whether discrete or continuous.</p>
+<p>Therefore, given an approximation or sample of the unobserved gaussian observations, the GP function can be computed, and from that point on any likelihood distribution can be used on top of it to infer parameters based on the data that is actually observed.</p>
+<h4 id="data-set-and-stan-implementation">Data set and Stan implementation</h4>
+<p>The model described above was implemented in Stan with the \( \ell_m \) and \( \sigma^2_{mp} \) parameters being sampled via <em>MCMC</em>, and the \( K \) matrix of size \(MN \times MN \) matrix being assembled as described above. Standard gaussian variables, \( \tilde{f} \) were also sampled, and the samples from the multivariate gaussian were computed by talking the Cholesky decomposition of \( K \) (\( L \)), and multiplying the vector of standard normal variables, the mean of the Gaussian Process was computed as \( f = exp(\mu + L \cdot \tilde{f}) \). A negative binomial distribution was used, parameterized with the mean \( f \), and a free parameter \( \alpha \) for the distribution’s dispersion, or \( y \sim NegBinom2(f, \alpha)\) .</p>
+<p>The pseudodata set was simulated using the parameters from a preliminary joint inference from real RNA expression data from <em>Drosophila melanogaster</em> over several generations of artificial selection [<a href="https://doi.org/10.1371/journal.pgen.1007098">Harbison <em>et al.</em> 2017</a>]. A subset of 20 genes was selected and the parameters obtained at that point of the MCMC chain were used for simulation of these 20 channels over 13 time points.</p>
+<p>Inference was run for \( 10^5\) iterations using the HMC sampler with No U-Turn Sampling method and dense Euclidian metric.</p>
+<ol type="1">
+<li><a href="http://www.gaussianprocess.org/gpml/">Carl Edward Rasmussen, Christopher K.I. Williams Gaussian. Processes for Machine Learning. MIT Press. 2006.</a></li>
+<li><a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction">Edwin V. Bonilla, Kian M. Chai, Christopher Williams. Advances in Neural Information Processing Systems 20 (NIPS 2007)</a></li>
+<li><a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Arman Melkumyan, Fabio Ramos, IJCAI 2011, Proceedings of the 22nd International Joint Conference on Artificial Intelligence, Barcelona, Catalonia, Spain, July 16-22, 2011</a></li>
+<li><a href="https://doi.org/10.1371/journal.pgen.1007098">Harbison ST, Serrano Negron YL, Hansen NF, Lobell AS (2017) Selection for long and short sleep duration in Drosophila melanogaster reveals the complex genetic network underlying natural variation in sleep. PLoS Genet 13(12): e1007098. 10.1371/journal.pgen.1007098</a></li>
+</ol>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         August  1, 2019
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Thu, 01 Aug 2019 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2019-08-01-StanCon-gaussian-processes.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Random Interlude</title>
+    <link>https://caesoma.github.io/posts/2018-09-30-random-interlude.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Random Interlude</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Random Interlude</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p><img src="../images/gaussiannoise.png" class="full-width"></p>
+<p>As I started to write this post I was at a conference where I saw some RNA-seq data; what I did not see was actual analysis of the data, just some clustering and then a zoom into the subset of “most interesting genes”.
+I can claim to have looked at some RNA-seq data and I know it is noisy, it looks like a snapshot of TV static except that instead of black and white people make it <a href="https://en.wikipedia.org/wiki/Gene_expression_profiling#/media/File:Heatmap.png">red-black-green</a> (or <a href="http://www.rna-seqblog.com/wp-content/uploads/2015/02/heatmap_osteoclast_Illustra.png">red-white-blue</a>, or <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3HqbIn4HfWhbjpl7d9KH5L3q69Y4MLMne9R3f_q_u1I5bvmR7">your favorite ugly combination of colors</a>).
+That is why standard analyses often use linear models (or the slightly more useful <a href="https://onlinecourses.science.psu.edu/stat504/node/216/">Generalized Linear Models</a>, with some more introduction <a href="https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_introreg_a0000000427.htm">here</a>).
+I have my issues with linear models which I will probably talk about in a different post, but they do allow testing for significance (also something I have issues with, but that I guess I won’t even discuss in writing).
+Clustering, on the other hand, just clusters; it may be useful to get organize very broad patterns in the data, but with no underlying model other than some simple distance-based metric it is not a reliable method to find relevant gene modules, much less to find specific genes.</p>
+<p>Possibly there’s an elegant demonstration of the relationship between some parametric statistical distribution and the resulting clustering based on Euclidean-<a href="http://mathworld.wolfram.com/Distance.html">distances</a>; I’m not going as far as to try to derive anything analytically. Instead I will give an example.</p>
+<p>Given 4 samples and the expression of ~10 thousand genes, you can cluster them based on their <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html">average distance</a>, the gene expression values are often centered at the gene (i.e. row) mean and scaled by their variance – if you are using R’s <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/heatmap.html">heatmap function</a> it is doing that by default (I did that using Python’s <a href="https://seaborn.pydata.org/generated/seaborn.clustermap.html">Seaborn</a>, although I’m more of a <a href="https://matplotlib.org/">matplotlib</a> person).
+The resulting heatmap is shown below:</p>
+<p><img src="../images/clustermap.png" class="textwidth"></p>
+<p>Without going into the meaning of the genes and sample labels, we can see some nicely formed clusters, and if we focus on the leftmost third, approximately, there are some clear non-overlapping clusters between samples:</p>
+<p><img src="../images/subclustermap.png" class="textwidth"></p>
+<p>This could indicate that there are genetic networks important for the function of interest, and looking into those maybe there are specific genes with predicted functions that could be tested for their functions.</p>
+<p>The problem with this is the actual data is simply \( y \sim \mathcal{N}(0, 1)\), a \(4 \times 10000 \) array of independent gaussian random draws, i.e. it is the best white noise no money can buy (but <a href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.normal.html">NumPy</a> can generate for free with a single Python command) plotted in some less ugly <a href="https://matplotlib.org/users/colormaps.html">“coolwarm” colormap</a>.
+The data before clustering, in the order the values were originally drawn, is shown below:</p>
+<p><img src="../images/clusterfuck.png" class="textwidth"></p>
+<p>So, I am not arguing cluster analysis is useless or that microarray or RNA-seq data are white noise, but I am showing that spurious patterns can be picked out of completely random data.
+That is more our fault than anything else, we expect to see patterns in our experiments based on our prior knowledge and our hypotheses; if we are not equipped to formulate and test those hypotheses properly only garbage will come out of these very expensive experiments.</p>
+<p>Nevertheless, the bigger problem is (hopefully) not drawing conclusions that can easily be shown to have no formal basis, but with methods that seem formal but are lacking in very serious ways; we need to see through those too, but often the ideas precede the ability to test them properly.
+I’m probably waxing too philosophical at this point, so I’m going to leave it at until I find more concrete example of that for a next post.</p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         September 30, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Sun, 30 Sep 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-09-30-random-interlude.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>On the journey of learning computer programming as a (natural) scientist</title>
+    <link>https://caesoma.github.io/posts/2018-07-28-programming-for-natural-scientists.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - On the journey of learning computer programming as a (natural) scientist</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>On the journey of learning computer programming as a (natural) scientist</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p><img src="../images/dirtyhaskell.png" class="full-width"></p>
+<p>I am a scientist, in the more old school sense of <a href="https://en.oxforddictionaries.com/definition/scientist">investigating the natural world</a>, as opposed to <em>computer scientists</em> and maybe mathematicians and statisticians (who in a modern and broader sense are so just as much).
+We traditionally must spend a lot of time reading about what is known of the systems we are interested in, and are trained in the <em>scientific method</em> to improve our knowledge of the world (without getting into how that works, except that I think anyone who claims to use the method should read <a href="https://plato.stanford.edu/entries/feyerabend/#AgaiMeth1970">Paul Feyerabend</a>).
+<!-- [//]: # (comment) -->
+We also need <em>tools</em> to do science, physical ones like the telescope of Galileo then (again, read <a href="https://plato.stanford.edu/entries/feyerabend">Feyerabend</a>) and <a href="https://www.microscopyu.com/microscopy-basics">modern microscopes</a> today, as well conceptual ones like mathematics and statistics – which Richard Feynman called a <a href="https://www.e-reading.club/chapter.php/71262/21/Feynman_-_Surely_Youre_Joking%2C_Mr._Feynman__Adventures_of_a_Curious_Character.html">box of tools</a>.
+More recently it has become important (and sometimes essential) to learn how to use computer programming languages, but while most natural scientists have heard of the existence of computers most are not trained in coding at all.</p>
+<p>My personal trajectory started in the physical sciences, later moving on to the life sciences. Having had presumably enough courses in the likes of calculus, linear algebra, quantum mechanics and thermodynamics, overall I considered myself a “quantitative” person, but even among the <a href="http://fortranwiki.org/">Fortran</a>-coding physicists and chemists I barely got to see enough of that, <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">C</a> or <a href="http://wiki.freepascal.org/Why_use_Pascal#What_is_Pascal.3F">Pascal</a> (maybe like the <a href="https://www.quora.com/Is-Pascal-still-used">Occitan of programming</a>) to recognize code when I saw it.
+Only a few years later, shortly before starting my PhD, I thought I should to actually learn to program stuff, and at that point I basically had to do it from scratch and while I was already getting into some more serious research.
+This post is not about my path, it is about the process of any given natural scientist – let’s call introducing coding into scientific research, but it is also told from my own perspective and that of friends and colleagues around me, so I assume it differs from that of others.</p>
+<h4 id="establishing-the-procedure"><em>Establishing the procedure</em></h4>
+<p>For whatever reason, at some point of their careers; any given natural scientist may be unable to use their favorite point-and-click statistics package, or may need to run a batch of analyses, or may decide that scripting them is an overall better way of doing things. They may pick up a language like Matlab (if someone around thought it was a good idea to spend <a href="https://www.mathworks.com/pricing-licensing.html">that kind of money</a>) or something free like <a href="https://www.r-project.org/about.html">R</a>, maybe <a href="https://www.python.org/">Python</a>.
+They will suffer a little before being able to set up a script that works, and then things will seem to be working alright, something like this: load your formerly-excel-table <em>csv</em> file, get the formatting and metadata in the right format, apply a blackbox-like-package, maybe use a <em>for-loop</em> to repeat a similar analysis for different subsets of the data, export results to a suitable file format. (personally, somewhere around this point I had used some R, <a href="https://www.stata.com/">Stata</a>, started learning some Python “for fun”, and then was compelled to learn Matlab, without being especially comfortable with any of them.)<!-- , they may get some help from senior postdoc Dr. Idle, -->
+Despite the initial pain of getting that shit working, once it’s done all is well with the world; they reached the next level of analysis: their toolbox is immensely expanded, their analyses more reproducible, more open, and the pain of getting a script working decreases in the next months until it nearly disappears.
+At this point we have learned how to translate our analysis procedure to computer code; we’ve learned <a href="http://wiki.analytica.com/index.php?title=Procedural_Programming">procedural programming</a>.</p>
+<p>Procedural programming makes sense to human beings in general because it is a series of instructions executed in order (<strong>1.</strong> load data, <strong>2.</strong> apply a function to it, <strong>3.</strong> save result), each one is a line or few lines representing something you want done to your data.
+As the natural scientist gets better this can become quite complex, with functions that can represent complex mathematical models describing <a href="https://caesoma.github.io/archive/standalone/2018-03-28-model-based-science">differential equations</a>, <a href="https://caesoma.github.io/archive/standalone/2018-04-11-multichannel-gaussian-processes-pt1">gaussian processes</a>, <a href="http://dfm.io/emcee/current/user/line/">Markov chains</a>, or whatever else, but the general structure of the code is still intuitive.
+However, if like me they picked Python or some other general-purpose language, they may know the language syntax enough to peek into packages found in general repositories like GitHub, or R toolbases like <a href="https://www.bioconductor.org/">Bioconductor</a>, and they will find what looks like this giant spaghetti mess of incomplete code that refers to other <em>classes</em> in different files. It’s like a book in a language you know but without paragraphs, pages, sequential order, or any useful reading structure.
+Congratulations, they may just have had their first encounter with object-oriented programming, or <a href="https://www.merriam-webster.com/dictionary/object-oriented%20programming">OOP</a>.</p>
+<h4 id="orienting-objects"><em>Orienting objects</em></h4>
+<p>Despite what their computer scientist friend may say, object-oriented programming makes does not make sense to human beings (I know that because I am one). That perception may change (or may not). in theory OOP is supposed to be a better paradigm than its procedural counterpart, preventing errors from propagating as the instructions are executed, or something. Instead of (<strong>1.</strong>) loading their data and (<strong>2.</strong>) applying a function like <a href="https://onlinecourses.science.psu.edu/stat502/node/137/">ANOVA</a> or a <a href="https://onlinecourses.science.psu.edu/stat504/node/216/">GLM</a> to it, they will create an <em>object</em> that (like <strong>1.</strong>) contains their data as an <em>attribute</em>, and that object has <em>methods</em>, which (like <strong>2.</strong>) are basically functions – there’s no longer <strong>your_data.csv</strong> itself, even displaying it is a method associated to that object or class of objects.
+If that doesn’t make sense to most people is because it probably doesn’t in general. OOPers will tell them that it does make sense because OOP models objects in the real world, and may describe <a href="https://docs.oracle.com/javase/tutorial/java/concepts/object.html">programming a bicycle</a> – “you don’t want to describe a procedure for riding a bike, instead you describe a bike object that has attributes like speed, current gear, etc, and methods like increase speed, change gear, etc”.
+They are probably right too; in some cases that could make more sense than describing a procedure, plus OOP is arguably what enabled organized modularity of large scale projects that would otherwise be unmaintainable.
+So if the natural scientist is committed to doing serious programming, or really wants to convert an amazing analysis pipeline into a package available to the public, the next step may be taking an
+<a href="https://www.edx.org/course/object-oriented-programming">online course on OOP</a>, and maybe that will take them to the next level.</p>
+<h4 id="scientist-on-computer-not-computer-scientist"><em>Scientist on computer, not computer scientist</em></h4>
+<p>I am not sure what is the proportion of scientists and from which areas go through which extent of the process I’m describing here, so I will just describe more or less how I experienced going through that last bit. It is all quite recent too, and cannot claim to be able to just go into any project of my interest in a familiar language and understand the guts of it, but I guess it takes more than mastering OOP to do that (and then again reading other people’s code is always a less-than-pleasant task, at least for me). Also, because I am not over this whole “phase”, I cannot really offer any “lessons” – not that this is my objective for this post.
+Object-oriented programming and features like <a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)">encapsulation</a> likely allowed me to program a couple of <a href="https://academic.oup.com/ve/article/3/suppl_1/vew036.050/4090797">Java modules for Beast 2</a> without having to understanding every single aspect of the <a href="https://github.com/CompEvol/beast2">whole project</a>. This is probably the time when a scientist like myself may want to go for a more “serious” <a href="https://en.wikipedia.org/wiki/Compiled_language">compiled language</a> like <a href="https://isocpp.org/about">C++</a> (basically C that supports OOP) or Java (as opposed to <a href="https://en.wikipedia.org/wiki/Scripting_language">scripting or interpreted languages</a> like Python or <a href="https://www.perl.org/about.html">Perl</a>).
+I was actually more interested in the increased speed of compiled languages, since Python is a multi-paradigm language that supports procedural, object-oriented, as well as functional programming (I know, maybe we had enough with different paradigms, but that’s the last one I will mention). Although C++ seems to have been created to bring C to OOP, it is also multi-paradigm. Java on the other hand is the prototypical object-oriented language, and sometimes it seems to have disciples that are on a mission to evangelize programmers about the paradigm – don’t quote me on any of this; I’m not a programmer, just a scientist, but that’s an idea that is kind of out there.
+That is not what made me choose C++ over Java for future projects, but ultimately I am glad it turned out this way, and that seems the common theme of learning to program as a scientist: we just go along trying things out and seeing what works.</p>
+<p>If you are a scientists without a lot of programming experience these last parts may seem too technical and somewhat confusing - I’d not only agree but still find them confusing myself. So we should probably back up a little and think about how far should we take this whole thing.</p>
+<p>As scientists we are not trained for understanding how machine code works or how to develop software, just like most natural scientists are not mathematicians; they may need to know some algebra and calculus for biophysics but do not need to be experts in <a href="https://www.britannica.com/science/differential-geometry">Riemannian manifolds</a>.
+I’ve come to a split where on the one hand I considered learning OOP for real, and implementing and implementing projects of my own or contributing to others, and on the other hand thinking that the way software development seems to work (ubiquitously under OOP) is not how I think about my research at all: a large part of my work consists of applying mathematical and statistical models to experimental data; programming with whatever paradigm doesn’t come in until I have to translate that so a computer can do that work. Going to much into things like OOP could be a waste of my time and feels more like learning tensor calculus than vector multiplication (granted that personally I have interest in both, but that’s besides the point). I would rather program in a way that is analogous to the way I formulate my scientific questions.</p>
+<p>On top of it all, OOP has been accused of <a href="https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53">not delivering on its promises</a>, and instead sweeping the dirt under the <a href="http://harmful.cat-v.org/software/OO_programming/">skeletons in the closet</a>, and <a href="https://medium.com/@brianwill/object-oriented-programming-a-personal-disaster-1b044c2383ab">maybe procedural was the best paradigm all along</a>. Well, I’m not trained to opine on that, maybe it is, maybe it’s not, or maybe there are other options. To paraphrase a <a href="http://wiki.c2.com/?AndrewTanenbaum">smart guy</a>: the great thing about the best paradigm is that there are so many of them to choose from.</p>
+<h4 id="functional-approaches"><em>Functional approaches</em></h4>
+<p>Enter <a href="https://en.wikipedia.org/wiki/Functional_programming">functional programming</a>, well, at least I think so. I’m not going much into its definitions, but the general idea is to treat computation as the evaluation of mathematical expressions, without assigning values to arbitrary variables like in procedural programming, or creating objects to represent those values. It focuses on actions rather than objects, “verbs” instead of “nouns” as some put it. To me that makes more intuitive sense and may be a good way to become more serious about the code I write while still being able to make sense of how it is implemented; plus I’m probably doing it in mostly-functional style anyway, otherwise contaminated by procedural and object-oriented code.</p>
+<p>Is functional better than object-oriented? Is procedural actually still better? I don’t think I care that much at this point. What I am convinced of is that I should first use programming to correctly solve my scientific demands, and only second decide whether learning a proper style is interesting for me.</p>
+<p>In any case I decided to learn (myself a) Haskell (<a href="http://learnyouahaskell.com/chapters">for great good</a>, I could say). Multi-paradigm languages like Python, <a href="https://julialang.org/">Julia</a> (a new interesting language designed for scientific computing), and even C++ support functional programming, but <a href="https://www.haskell.org/">Haskell</a> is purely functional so there is no way around the paradigm, no cheating (to be completely honest, all paradigms contain some procedural code to make it run in the first place) and it is constructed with mathematical functions at heart so it is supposed to flow like math in a lot of ways. Nevertheless Haskell’s “purity” can be annoyingly inflexible to the point of being unmathematical in some specific instances, but I’m not yet sure it is a practical language for my purposes, so for now it’s more of an exercise, while most serious work will get done in the previous three languages.
+<!-- Whatever language ends up being the best, I think the paradigm should match the task, so if it turns out --></p>
+<h4 id="conclusion"><em>Conclusion</em></h4>
+<p>So to conclude, programming is this new(ish) cool thing scientists should be using or are told they should, but it’s unlikely that they will devote more than the time necessary to get their shit done, and that will vary with the sophistication of their computational framework, just like their mathematical and statistical knowledge will vary with the sophistication of their formal quantitative description. That probably applies to methods more broadly than math and programming too, it is always a matter of balancing the experimental demand with methodological expertise. Likely they will lag the actual level required for the cutting edge of analyses, but scientists do what they can with the resources they have, and it is entirely possible to err on the side of excess instead and become a methodological fetishist (but if that’s your thing, good for you).</p>
+<p>Wherever you are down this path, chances are if you’re doing your job with the box of tools you have, you can start slowly but steadily improving on it in whatever front, and if you can find the interest to do it you will end up with a different box of tools. Like that geeky-funny-inspiring story from Richard Feynman.</p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         July 30, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Mon, 30 Jul 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-07-28-programming-for-natural-scientists.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Multi-channel gaussian processes (part 2: mathematical description)</title>
+    <link>https://caesoma.github.io/posts/2018-05-28-multichannel-gaussian-processes-pt2.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Multi-channel gaussian processes (part 2: mathematical description)</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Multi-channel gaussian processes (part 2: mathematical description)</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>Most applications of the gaussian processes, whether it’s regression or classification, have one channel (or task) with a set of observations \( (y = f(x) + \varepsilon) \) for some values of an independent variable \( x \) (the <em>training data</em>), and possibly a set of unobserved values \( x_\star \) for which we may like to predict the values.
+Alternatively, we may want to infer the kernel parameters (or <em>hyperparameters</em> as the machine learnists like to call it, \( \sigma_f^2 \), the signal variance, and \( \ell \), the bandwidth, in the “squared exponential kernel”) that have higher probability of having generated the observed values.
+<!-- As described by [Rasmussen and Williams Gaussian](http://www.gaussianprocess.org/gpml/) -- and apparently in --></p>
+<p><a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction">Bonilla <em>et al.</em></a> and <a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Melkumyan and Ramos</a> describe multi channel, or multi task, gaussian processes; in some aspects they are complementary, so I will draw on both and on the thorough description of single channel GPs in <a href="http://www.gaussianprocess.org/gpml/">Rasmussen and Williams</a>, because that is how I managed to piece together everything I needed – a <a href="https://gist.github.com/caesoma">GitHub gist</a> implements an example of the description below.</p>
+<p>Loosely speaking, gaussian processes are based on computing a matrix with the correlation between different data points, and multi-channel GPs extend that to include correlations between data of different channels, so while the matrix of training points correlations for \( N \) training points in a single channels results in a \(N \times N\) “\( K \) matrix” for a multiple channels results in a square matrix with the total number of training points, e.g. \((N_1+N_2) \times (N_1+N_2)\) for two channels.
+Furthermore, the kernel parameters may depend on which channel the training point belongs to [<a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Melkumyan and Ramos</a>]; normally the parameters of the squared exponential kernel, for instance, include the square of the bandwidth \( 2\ell^2 \), which arises from both data points coming from the same process.
+In the case of covariance between different channels these parameters may differ, resulting in \( \ell_1^2 + \ell_2^2 \) instead of \( \ell^2 + \ell^2 = 2\ell^2\), indicated by the subscripts in \( k_{lk} \).</p>
+<p>Melkumyan and Ramos showed how to obtain these covariance functions for different kernels (also having a different kind of kernel for each channel).
+The same applies to the signal variance of the process that multiplies the covariance matrix, instead of a single \( \sigma_f^2 \) for each channel that is extended to being a symmetric matrix of size \(M \times M\) for \( M \) channels giving the signal variance for each channel on the signal covariance between channels off of diagonal, that is what is described by <a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction">Bonilla <em>et al.</em></a>.
+For instance, the entry of the matrix corresponding to the correlation between the \( i^{th} \) training point of channel \( l \) and the \( j^{th} \) of channel \( k \) has signal covariance (where we dropped the subscript \( f\) ) \( \sigma_{kl}^2 \) and bandwidth parameters \( \ell_l \) and \( \ell_k \), given then by</p>
+<p><span class="math display">$$ k_{lk}(x_{li},x_{kj}) = \sigma^2_{lk} exp \left( \frac{-|x_{li}-x_{kj}|^2}{\ell_l^2 + \ell_k^2} \right) $$</span></p>
+<!-- where  \\(r = x_{11}-x_{21}\\). -->
+<p>To illustrate that, given two training points for channel 1 and two for channel 2, we have a covariance matrix of the following form:</p>
+<p><span class="math display">$$ K = \begin{bmatrix} \sigma^2_{11} \begin{bmatrix} k_{11}(x_{11},x_{11}) &amp; k_{11}(x_{11},x_{12}) \\ k_{11}(x_{12},x_{11}) &amp; k_{11}(x_{12},x_{12}) \end{bmatrix} \sigma^2_{12} \begin{bmatrix} k_{12}(x_{11},x_{21}) &amp; k_{12}(x_{11},x_{22}) \\ k_{12}(x_{12},x_{21}) &amp; k_{12}(x_{12},x_{22}) \end{bmatrix} \\ \sigma^2_{21} \begin{bmatrix} k_{21}(x_{21},x_{11}) &amp; k_{21}(x_{21},x_{12}) \\ k_{21}(x_{22},x_{11}) &amp; k_{21}(x_{22},x_{12}) \end{bmatrix} \sigma^2_{22} \begin{bmatrix} k_{22}(x_{21},x_{21}) &amp; k_{22}(x_{21},x_{22}) \\ k_{22}(x_{22},x_{21}) &amp; k_{22}(x_{22},x_{22}) \end{bmatrix} \end{bmatrix} $$</span></p>
+<!-- ![Kmatrix](/images/latexit/Kmatrix.png) -->
+<!-- [//]: # (K = \\\begin{bmatrix} k_{11}(x_{11},x_{11}) & k_{11}(x_{11},x_{12}) & k_{12}(x_{11},x_{21}) & k_{12}(x_{11},x_{22}) \\ k_{11}(x_{12},x_{11}) & k_{11}(x_{12},x_{12}) & k_{12}(x_{12},x_{21}) & k_{12}(x_{12},x_{22}) \\ k_{21}(x_{21},x_{11}) & k_{21}(x_{21},x_{12}) & k_{22}(x_{21},x_{21}) & k_{22}(x_{21},x_{22}) \\ k_{21}(x_{22},x_{11}) & k_{21}(x_{22},x_{12}) & k_{22}(x_{22},x_{21}) & k_{22}(x_{22},x_{22}) \\end{bmatrix}) -->
+<p>So basically the covariance matrix for the training points is built the same way as for a single channel, with the blocks in the diagonal being the same as for a single channel model, and the blocks off the diagonal having a signal covariance and combining the kernels of the pairs of channels.</p>
+<p>Conceptually it is pretty simple, but actually trying to write it down and implementing it as code can be confusing at times, so it takes some staring at its repetitive structure to internalize it.</p>
+<p>From here there are at least two ways we can go: you may want to predict the values at other values of \( x \) that were not observed, and you can estimate the <em>hyperparameters</em>.
+In the first case, given the \( K \) matrix and the concatenated one-dimensional vector of the observations \( y = [y_1 y_2]\) the mean and variance of an unobserved data point from a channel <em>l</em> can be predicted with the following expressions:</p>
+<p><span class="math display">$$ \bar{f}_{l\star} = \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{y} \\
+Var[\bar{f}_{l\star}] = \mathbf{k_{l\star\star}} - \mathbf{k_{l\star}}^T(K+\sigma_n^2I)^{-1}\mathbf{k_{l\star}} $$</span></p>
+<p>Those expressions are entirely analogous to the single channel ones described by Rasmussen and Williams, just observing the combination of hyperparameters between channels.</p>
+<p>Bringing together that formulation with what’s described in the papers I cite, Bonilla <em>et al.</em> write the <em>covariance</em> matrix as a kronecker product \( K = K_f \otimes K^x \), where \( K_f \) is the positive semidefinite matrix with the variance intensity of each single channel, and the covariance between channels, and \( K^x \) are the correlation matrix blocks for each channel and between channels. To write this as this kronecker product the correlation blocks (\(K^x\)) must be assumed to be the same, and if there is no noise added to the correlation matrix, the gaussian process can be written as an expression independent of the (\(K_f\)) matrix:</p>
+<p>\begin{align}
+{f}(\mathbf{x_\star}) &amp;= (K_f \otimes \mathbf{k_\star^x} )^T ( K_f \otimes K^x )^{-1} \mathbf{y} \\
+&amp;= ( K_f( Kf )^{-1} ) \otimes ((\mathbf{k_\star^x} )^T ( K^x )^{-1}) \mathbf{y} \\
+&amp;= I \otimes ((\mathbf{k_\star^x} )^T ( K^x )^{-1}) \mathbf{y}
+\end{align}</p>
+<!-- \bar{f}(\mathbf{x_\star}) &= (K_f \otimes \mathbf{k_\star^x})^T (K_f \otimes K^x)^{-1}\mathbf{y} \\ &= (K_f(Kf)^{-1}) \otimes ((\mathbf{k_\star^x})^T (K^x)^{-1})\mathbf{y} \\ &= I \otimes ((\mathbf{k_\star^x})^T (K^x)^{-1})\mathbf{y} -->
+<p>Therefore, the authors argue that in a noiseless process there is no transfer between the channels, but that is only the case if the matrix can be written as that kronecker product, i.e. the submatrices making it up are the same. For the formulation where we have different hyperparameters (here \( \ell \)), the blocks are different even in the absence of added noise, so there is transfer regardless.</p>
+<p>That whole formulation is implemented in Python in <a href="https://gist.github.com/caesoma/ee16f5fbcca8c9dfb9eb03cf34837896">this GitHub gist</a>; the implementation uses for loops to set up all matrices; if you want to stick to Python that can be sped up by using numpy arrays for some operations, but I wanted to put it like that to make the function structure simpler to read (if you have any comments about the implementation, feel free to comment on the gist).
+The true values are drawn from independent sinusoidal functions, so they don’t represent actual interactions between the channels. For any useful modeling of, say, a biological system we would need to estimate the parameters to get an estimate of the interactions between channels.</p>
+<p>Estimating the hyperparameters requires computing the likelihood, which for gaussian noise has a closed form with \( y \sim \mathcal{N}(\mu, K+\sigma_n^2I) \). From there with the expression for the normal distribution the log likelihood can be explicitly written as:</p>
+<p><span class="math display">$$ log\ p(\mathbf{y}|X) = -\frac{1}{2} \mathbf{y}^T(K+\sigma_n^2I)^{-1}\mathbf{y} - \frac{1}{2}log|K+\sigma_n^2I| - \frac{n}{2}log 2\pi $$</span></p>
+<p>Beyond this, I’m not going into inference in this post to try and keep things separate, but will probably address it later on when discussing non-gaussian likelihoods (in my opinion somewhat misleadingly called gaussian process classification, or <em>GPC</em>).
+Let me know if you have any more questions by commenting on the gist or via twitter.</p>
+<p><strong>References</strong><br />
+1. <a href="http://www.gaussianprocess.org/gpml/">Carl Edward Rasmussen, Christopher K.I. Williams Gaussian. Processes for Machine Learning. MIT Press. 2006.</a><br />
+2. <a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction">Edwin V. Bonilla, Kian M. Chai, Christopher Williams</a><br />
+3. <a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Arman Melkumyan, Fabio Ramos, IJCAI 2011, Proceedings of the 22nd International Joint Conference on Artificial Intelligence, Barcelona, Catalonia, Spain, July 16-22, 2011</a></p>
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+<!-- [//]: # ()
+4. [David J.C. MacKay. Introduction to Gaussian Processes. In Bishop, C.M. editor, Neural Networks and Machine Learning. pp 84-92. Springer-Verlag. 1998.](http://www.inference.org.uk/mackay/gpB.pdf)
+5. [Christopher Bishop. Pattern Recognition and Machine Learning. pp 311. Springer. 2006.](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
+-->
+
+        <code>
+        
+            -- caetano,
+         May 28, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Mon, 28 May 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-05-28-multichannel-gaussian-processes-pt2.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Mathematical symbols and equations with MathJax rendering of LaTeX symbols</title>
+    <link>https://caesoma.github.io/posts/2018-05-17-mathjax-test.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Mathematical symbols and equations with MathJax rendering of LaTeX symbols</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Mathematical symbols and equations with MathJax rendering of LaTeX symbols</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>I wanted (and still want) to keep this page/blog as simple as possible, which meant not including any JavaScript at all or anything “fancy”. So I’d have text, figures, and any mathematical symbols or equations would just be figures as well from the very handy <a href="https://www.chachatelier.fr/latexit/">LaTeXiT</a>.
+However, being a regular \( \LaTeX \) user it would be very convenient to be able to just write equations <em>inline</em> and <em>display</em> style so when googling I found out about <a href="https://www.mathjax.org/">MathJax</a>. There are many howtos on google for how to incorporate the MathJax scripts into GitHub pages, and you can just copy a <a href="https://github.com/caesoma/caesoma.github.io/blob/master/_includes/mathjax.html">snippet</a> into your default layout page, but it took me a little more work with the liquid tags to load the scripts only for <a href="https://github.com/caesoma/caesoma.github.io/blob/master/index.html">posts where I set the mathjax flag</a>, and here’s an example of trying to keep that simple.</p>
+<p>It’s nice to be able to write simpler equations inline like this: \( e^{i\pi} + 1 = 0 \), or longer ones like Erwin Shrödinger’s wave equation:</p>
+<p>\begin{equation}
+i \hbar \frac{\partial}{\partial t} \Psi (x,t) = -\frac{\hbar^2}{2m} \nabla^2 \Psi (x,t) + V(x) \Psi (x,t)
+\end{equation}</p>
+<p>so anyway, since I had a test post to include the scripts and write some equations I’m going to leave this here in case it is helpful for someone trying to blog with some pretty math.</p>
+<!-- [//]: # (comment) -->
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+
+        <code>
+        
+            -- caetano,
+         May 17, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Thu, 17 May 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-05-17-mathjax-test.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Multi-channel gaussian processes (part 1: introduction)</title>
+    <link>https://caesoma.github.io/posts/2018-04-11-multichannel-gaussian-processes-pt1.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Multi-channel gaussian processes (part 1: introduction)</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Multi-channel gaussian processes (part 1: introduction)</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>Machine learning is all the rage these days, it is hard to hear about some new cool thing that doesn’t involve the term, somewhat replacing the more vague and <a href="https://motherboard.vice.com/en_us/article/a34dxe/altered-carbon-netflix-review">Altered Carbon</a>-invoking term AI (in trying to avoid clichés I should at least attempt to stay away from <em>Blade Runner</em> references), and now-already-outdated ones like data mining, which these days sounds like something from the 1980s.
+Apparently, most applications still seem to use neural networks, which can be very good at the job, but are actually stuff from the 80s as pointed out by people like <a href="https://tedxboston.org/speaker/vigoda">Ben Vigoda</a>.</p>
+<p>Alternatives to that approach include methods like gaussian processes; there are formal connection between the approaches (as there often are to many others) but the most basic connection is probably that they are all just statistics and inference with different flavors of linear algebra to glue everything together – i.e. “machine learning” is not a separate, more sophisticated class of methods in any real way.
+Gaussian processes (GPs) are no exception; coming from the side of traditional statistics they are basically linear regression formulated in a clever way that is able to explore useful properties of basis functions and the gaussian distribution to be more flexible than fitting a straight line or an unknowable polynomial.
+Therefore, besides its representation as jointly normal variables with correlations specified by a kernel, gaussian processes can be formalized as a traditional linear regression, and this is called <em>dual-representation</em>.</p>
+<p>While linear models, and/or others based on normally-distributed data are still widely used in experimental science, normally not even the scientists believe their process of interest really conforms to that kind of model.
+Non-linear parametric models are more sophisticated alternatives, and can be formulated as coupled differential equations (ODEs) that (somewhat) mechanistically represent the processes of interest, and often require numerical approaches to both obtain an output and infer their parameters.
+Although only a few fields <a href="http://mathworld.wolfram.com/SIRModel.html">(like epidemiology) have a basic model</a> of that serves as basis for almost every other extension, I believe this kind of models should be the ultimate goal of modeling any system.</p>
+<p>Gaussian processes are somewhat non-parametric models (they do have parameters, but they are quite flexible and therefore do not have a very predefined shape of the outputs), and can in some cases be seen as in-between inflexible linear models, and computationally-intensive, complex parametric models.
+Nevertheless, there are several shortcomings of the regular GP-regression that need to be addressed to make it useful for inference, and prevent scientists from incurring in the same errors of using linear models indiscriminately.
+One of the limitations is that observations are assumed to be normally distributed; for traditional linear models this is dealt with by extending them to have non-gaussian likelihoods, converting them into what is called generalized linear models (GLMs) – GPs can also be extended in a somewhat similar way, which I should discuss sometime soon.
+Another thing is that GPs normally describe a univariate function, which does not capture interaction between processes like many models of coupled ODEs – this is what I am going to start to address in this post and its part-two follow-up.</p>
+<p>While it is technically possible to have independent functions describing the different observed processes, for many systems the main interest is in determining the interaction parameters: for <a href="http://mathworld.wolfram.com/Lotka-VolterraEquations.html">predator-prey</a> models that would be the predation rate; for epidemiological models the transmission rate between infected and healthy individuals(<a href="http://rspa.royalsocietypublishing.org/content/92/638/204">Ross</a>); or for host-microbe interactions it would be the rate of clearing pathogens by the immune system
+(<a href="http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0006339">Souto-Maior <em>et al.</em></a>).
+So apart from assuming independence, there may be different ways of coupling gaussian processes; I am going to describe a formulation that can be made with essentially the same constructs used for single-channel processes.</p>
+<p>There are plenty of good references that describe the basics of gaussian processes formally (see <a href="http://www.gaussianprocess.org/gpml/">Rasmussen, Williams</a>, whose notation I will follow when applicable). More casual explanations can be found, like that in a blog post by <a href="http://katbailey.github.io/post/gaussian-processes-for-dummies/">Kat Bailey</a>, with some code in Python that I found quite useful for a practical implementation.
+I recommend getting familiarized with some of the theory and computational implementations of gaussian processes before moving on to multi-channel versions of the method.</p>
+<p>Some of the features I will describe in the next post are outlined in two papers from <a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction.pdf">Bonilla et al.</a>, and <a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Melkumyan and Ramos</a>. The result are interacting processes with kernels between the different channels, and a covariance matrix that defines the intensity of these interactions. That may be useful to improve inference, and especially to estimate which are the most important interactions – this can be informative of the underlying mechanisms.
+This may (or may not) sound very fancy, so it’s important to remind yourself (and myself) that like any other statistical method there are situations where “machine learning” is useful and other where it is not; claiming to use artificial intelligence is a fast way to associate to the state-of-the-art, but these days it is more often a buzzword-fueled marketing ploy than a sign of any sort of wisdom.</p>
+<!-- `-- caetano, {{ page.date | date: "%Y-%m-%d" }}` -->
+<p><strong>References</strong>
+1. <a href="http://rspa.royalsocietypublishing.org/content/92/638/204">Ross R. An application of the theory of probabilities to the study of a priori pathometry–Part I Proc R Soc A 1916;638:204-230</a><br />
+2. <a href="https://doi.org/10.1371/journal.pntd.0006339">Souto-Maior C, Sylvestre G, Dias FBS, Gomes MGM, Maciel-De-Freitas R. Model-based inference from multiple dose, time course data reveals <em>Wolbachia</em> effects on infection profiles of type 1 dengue virus in <em>Aedes aegypti</em>. PLoS Negl Trop Dis 2018;12:e0006339</a><br />
+3. <a href="http://www.gaussianprocess.org/gpml/">Carl Edward Rasmussen, Christopher K.I. Williams. Gaussian. Processes for Machine Learning. MIT Press. 2006.</a><br />
+4. <a href="https://papers.nips.cc/paper/3189-multi-task-gaussian-process-prediction">Bonilla EV, Chai KM, Williams CKI. Multi-task Gaussian Process Prediction</a><br />
+5. <a href="https://www.ijcai.org/Proceedings/11/Papers/238.pdf">Melkumyan A, Ramos F. Multi-Kernel Gaussian Processes</a></p>
+
+        <code>
+        
+            -- caetano,
+         April 11, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Wed, 11 Apr 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-04-11-multichannel-gaussian-processes-pt1.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a comment on 'The Scientific Paper Is Obsolete')</title>
+    <link>https://caesoma.github.io/posts/2018-04-09-not-just-the-scientific-paper-is-obsolete.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a comment on 'The Scientific Paper Is Obsolete')</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a comment on 'The Scientific Paper Is Obsolete')</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>The <em>scientific paper</em> – the actual form of it – is to this day used by researchers to communicate results, despite being essentially the same as the paper version created 400 years ago, and that is limiting in a world where communication has evolved into a plethora of digital channels in all shapes and formats. The “notebook” is an interactive, digital replacement that could circumvent essentially all limitations for a piece of paper (or a <em>pdf</em> file). That is what is argued in a <a href="https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/">piece in The Atlantic</a>.</p>
+<p>As a scientists I think not only that but many practices and tools are obsolete; I don’t think however that one standard of communicating science is needed to replace the <em>paper</em> any more than a standard for any other aspect of it – the claim that there is a clear option to replace the scientific paper format is pretty weak.
+In fact, the piece is less about the obsolescence of the <em>paper</em> and more about the virtues of the <em>notebook</em>; it also conflates some of its issues with the crisis of reproducibility of science – most biological and medical research is still analyzed with correlations, linear regression and ANOVA, (or worst, statisticsless plots – some are even <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128&amp;fullSite">bars!</a>) and people are lucky if the researchers understand the methods they are using. Sloppily written software, another culprit called out in the piece, is of course worse than solid software, but people who understand statistical methods enough to write their own software are probably more part of solution than of the problem, at least in what concerns the analyses.</p>
+<p>There is no arguing that the <em>paper</em> has all sorts of flaws: it is not interactive, it rarely describes all the details necessary to reproduce all the results, it has limited space, it is often dry and boring (even when in concise form and without the raw data tables), it is flat. But today the <em>paper</em> does not exist to fulfill all of these roles, it is more of a summary of years of research – to “tell a story”, as many people put it – and all scientists know that really learning something takes much more than reading a methods section. I heard a prominent pioneer of open access say we need to stop the myth that people read papers; I agree, most exist only to show the results, many are pretty bad at it anyway, and then they have the other sections because they have to. That is further amplified in glamour journals, which often read more like sensationalist tabloids descriptions of the actual research process.
+<a href="http://blog.thegrandlocus.com/static/misc/is_the_scientific_paper_fraudulent.pdf">Is the scientific paper fraudulent?</a>, Peter Medawar asked over 50 years ago; and already then he answered in the positive.
+That doesn’t mean the <em>paper</em> is useless either, but it is probably more of a by-product of all the things that are wrong in science (like in the world), than the cause of the trouble.</p>
+<p>The <em>notebook</em> does not solve all those issues either, even if the work is mostly computational.
+It was also suggested more than once that scientific communication should be <a href="http://www.slate.com/articles/technology/future_tense/2017/04/we_need_a_github_for_academic_research.html">more like GitHub</a>, but anyone who takes that at face value as a solution probably understands neither GitHub nor scientific publishing.
+More comprehensive ways of describing scientific work are always welcome (that is why I spend time on <a href="https://caesoma.github.io/">my own page</a>, so I can describe what cannot be put into the methods, and give nitty gritty details of things I may have struggled with myself – which are formally in the paper and references therein, but require a lot of work to go through and actually get things going). I have used notebooks extensively at one time or another, from <em>Mathematica</em> and <em>Maple</em>, to <em>IPython/Jupyter</em>, through <a href="http://www.sagemath.org/">Sage</a> and <a href="http://maxima.sourceforge.net/index.html">Maxima</a>, and I think they can be very useful for interactive work as well as presentation purposes, but not necessarily for standalone communication any more than some well-commented Python code could be, for me at least. Maybe it is other scientists’ preferred method of writing or reading research, which is fine, but it might as well be worse than the paper in some cases, so why try to replace it entirely?</p>
+<p>The <a href="https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/">Atlantic piece</a> is correct in all the things the <em>paper</em> is not, and in some things the <em>notebook</em> is, but as the frontier of human knowledge science is extremely complex, and the form of the communication of its results is only one of many fronts (albeit an important one) where problems arise. Within there are issues of access to the publications and results, reproducibility based on published methods (which level of detail and thoroughness of the description should be there?), and sustainability of the publication system. Beyond that there are other large fronts like science funding, and the actual research activity being probably the main one.
+Many of these are probably static for way more than 400 years; the <em>paper</em> is not the only thing that needs urgent rethinking, although it just may as well be a good place to start.</p>
+<p>(<em>a version of this post appears on</em> <a href="https://medium.com/@caesoma">Medium</a><em>, you can leave comments there or reach me on</em> <a href="https://twitter.com/caesoma">twitter</a>)</p>
+
+        <code>
+        
+            -- caetano,
+         April  9, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Mon, 09 Apr 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-04-09-not-just-the-scientific-paper-is-obsolete.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Model-based inference in experimental science</title>
+    <link>https://caesoma.github.io/posts/2018-03-28-model-based-science.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Model-based inference in experimental science</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Model-based inference in experimental science</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>There seemed to be a split between theoretical and experimental science back when I was a chemistry undergrad over ten years ago. Even then I got to both work in an inorganic chemistry wet lab, and apply the theory of quantum mechanics to spectroscopy and molecular structure calculations, but the split was there. The same thing was there between health/medical statisticians working on epidemiological problems and clinicians, as well as in biology more recently as a finished my Ph.D. work and began working in a quantitative genetics lab.
+I assume this thing has been there for a long time – maybe people who are not mathematically inclined did not hate <a href="http://mathworld.wolfram.com/BhaskarasFormula.html">Bhaskara’s Formula</a> at the time it was developed just as much as they do today – but I’m sure it’s been quite long.
+That is one of the reasons I normally introduce myself as a computational biologist; situates me on the left side of the spectrum right of computer scientists and bioinformaticians, a little left from quantitative geneticists, maybe; however, given my diverse background, I prefer to see myself just as a scientist who happens to think mathematical models are a powerful approach to explain complex systems and data.</p>
+<p>More generally, it is widely believed (<em>whoa, such a strong language for a scientific discussion!</em>) that there’s such thing as model-free analysis, and that some scientists like to tinker with models more than do rigorous experiments – which is what would separate mathematical biologists or bioinformaticians from actual biologists. I argue the interaction of theory and experiment has been the only real way for science to be both conceptualized and tested through the centuries, and putting efforts into formal descriptions of the model in detriment of a greater volume of experiments is no waste. Again, there is no such thing as model-free science, and every researcher has to balance resources into the different parts of a scientific project, which includes the analysis of quantitative data.</p>
+<p>I don’t argue that sophisticated analysis is always applicable to any problem or data, but I argue that the need for quantitative models is likely proportional to the complexity and/or size of the system, and that they reveal features that are <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0020439">otherwise invisible</a>.
+I also argue that they are always there, in simpler or more sophisticated, more or less parametric forms, and that knowing how they work is knowledge as important as the core principles of physics, chemistry, or biology (sometimes, as in quantum mechanics, they <em>are</em> the core concepts).</p>
+<p>The things I’ll write about in these posts are not about methods <em>per se</em> (I’m not a computer scientists or a programmer), they are not on modeling (I’m not a mathematician or statistician by training either). This is not a page on biology specifically, although this is what I chose to work on because I thought these were some of the most interesting scientific problems out there.
+It just may be a blog on the interface of different disciplines to try to approach problems in different ways, and how quantitative models (and conceptual models more generally) help doing that.</p>
+<!-- [//]: # (comment) -->
+
+        <code>
+        
+            -- caetano,
+         March 28, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Wed, 28 Mar 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-03-28-model-based-science.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+<item>
+    <title>Introduction/Disclaimer</title>
+    <link>https://caesoma.github.io/posts/2018-02-22-introduction-disclaimer.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Introduction/Disclaimer</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Introduction/Disclaimer</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>This is a personal page, but it is not personal in the sense that I will not write about my personal life.
+This is a professional web page, but it is not professional in that it does not represent the view of any professional organization I work or worked for – this is by no means an institutional web page.
+I will be giving my personal opinion or perspective on professional topics, that is, topics related to science (whether it is biology, chemistry, physics, public health), research (whether it is research activity itself, publishing, philosophy of science), programming, experimental design, and it may well be that I end up talking about things I am not trained in (I am not always sure what that is exactly, but see the <a href="https://caesoma.github.io/about/">about</a> page).
+This is not a peer-reviewed publication (for those, see <a href="https://caesoma.github.io/publications">publications</a>), and I do not know everything (whatever some people may seem to think, no one does), so some things will be incomplete, wrong, biased and/or prejudiced. I will try my best, and sometimes simply try, but in the best tradition of science I will be very happy to have feedback on much of what I write here – it may well be even better than the best tradition because it dates back from the 19th century and broad peer- and non-peer-review is only possible now, in 21st century.
+The things written here can be broad or specific, philosophical or technical, they may even be incomprehensible to most or all people and serve simply as encouragement for me to elaborate on something that I would otherwise just divagate about inside my head.</p>
+
+        <code>
+        
+            -- caetano,
+         February 22, 2018
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Thu, 22 Feb 2018 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2018-02-22-introduction-disclaimer.html</guid>
+    <dc:creator>Caetano Souto Maior</dc:creator>
+</item>
+
+    </channel>
+</rss>
