@@ -29,6 +29,7 @@ cd $GITDIR/caesoma.github.io/src
 #git stash
 
 # Verify correct branch
+echo ">>> switch to develop branch"
 git checkout develop
 if [ $COPY = true ]; then
     cp -r $GITDIR/caesoma.github.io/src/ $GITDIR/caesoma.github.io/copy
@@ -36,17 +37,20 @@ if [ $COPY = true ]; then
 fi
 
 # git stage <modified files here>
+echo ">>> commit and push develop"
 git stage .
 git commit -m "$COMMESSAGE"
 git push origin develop
 
 # Build new files
+echo ">>> hakyll build"
 stack exec site clean
 stack exec site build
 # stack exec site watch
 
 # Get previous files
 #git fetch --all
+echo ">>> switch to main branch"
 cd ..
 git checkout master # --track origin/master
 
@@ -55,6 +59,7 @@ git checkout master # --track origin/master
 cp -a src/_site/. .
 
 # Commit
+echo ">>> commit and push to main"
 git stage -A
 git commit -m "publish"
 
