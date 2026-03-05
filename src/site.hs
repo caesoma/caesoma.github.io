@@ -29,7 +29,7 @@ customPandocCompiler =
 
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
+    match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -51,7 +51,7 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    match "posts/*" $ do
+    match "posts/*.md" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
@@ -99,10 +99,10 @@ main = hakyll $ do
 -- Define the feed configuration
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
-    { feedTitle       = "caesoma's personal blog"
-    , feedDescription = "caesoma hakyll rss feed"
-    , feedAuthorName  = "Caetano Souto Maior"
-    , feedAuthorEmail = "caetano@auroracollective.io"
+    { feedTitle       = "Cramble"
+    , feedDescription = "caesoma's rambling rss hakyll feed"
+    , feedAuthorName  = "caesoma"
+    , feedAuthorEmail = "caesoma@protonmail.ch"
     , feedRoot        = "https://caesoma.github.io"
     }
 

@@ -1,0 +1,11 @@
+---
+author: caetano
+title: ""
+date: 20
+layout: post
+---
+
+<img src="/images/image.png" class="full-width">
+
+![Alt text](URL-or-path-to-image "Optional title")
+
