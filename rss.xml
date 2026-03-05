@@ -2,13 +2,208 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>caesoma's personal blog</title>
+        <title>Cramble</title>
         <link>https://caesoma.github.io</link>
-        <description><![CDATA[caesoma hakyll rss feed]]></description>
+        <description><![CDATA[caesoma's rambling rss hakyll feed]]></description>
         <atom:link href="https://caesoma.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Mon, 20 Jul 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Mar 2026 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Official Claude Barcelona event: Notes the opinions of an Anthropic egineer on the future of Claude Code.</title>
+    <link>https://caesoma.github.io/posts/2026-03-04-anthropic-barcelona.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Official Claude Barcelona event: Notes the opinions of an Anthropic egineer on the future of Claude Code.</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Official Claude Barcelona event: Notes the opinions of an Anthropic egineer on the future of Claude Code.</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p><img src="../images/postimg/claude-barcelona.png" class="full-width"></p>
+<p>Anthropic is sponsoring Claude events around the globe. Yesterday the Claude Community in Barcelona hosted the first officially Anthropic-supported event: <a href="https://luma.com/kqmy9rws">“Claude Code for Everyone”</a>.
+I’m not going to rehash my general opinions on “AI”, LLM-assisted coding and vibe coding, but the event was what you’d expect from it: some curious applications, nothing revolutionary, and some bedazzlement at an Anthropic egineer “beaming in” through what you’d think was an AI-generated hologram, but was actually a Zoom call – bubble or no bubble, the hype machine rages on undeterred.</p>
+<p>That said, the back-and-forth with the Claude Code engineer in question, <a href="thariq.io">Thariq Shihipar</a> was overall saner than your average Anthopic statement. Mmost questions were pretty average – some interesting nonetheless, like safety concerns, and beyond the mainstream hype – but some of his points actually resonated with me, and actually toned down some of the hype:</p>
+<ol type="1">
+<li><p>One question was along the lines of how amazing it is that you can prompt Claude Code before you go to bed (yeah, I won’t get into work/life balance, screens and sleep, andall the reasons for this being problematic), and Thariq’s response was: “well, I actually like to think about things before I do them”, in almost as many words. Coming frfom a Claude Coded engineer (and at a time when Dario Amodei will repeat every 6 months that we’re 6 months away from fully automating software engineers) that’s quite significant. It’s also obvious for anyone paying any attention to anything; LLMs will never automated judgement: there are infinite possibilities, and we have to decide what we want – that’s what’s most important in anything we do.</p></li>
+<li><p>A second comment by Thariq, more than a reply, was about LLMs being “grown”, not designed, so nobody (Anthropic included) knows what they are good at. That’s a bad choice of words, but I get what he means, the architecture is designed and then model parameters (“weights”) are estimated (“trained”), and after the fact they need to figure out if it’s actually able to perform as expected, and how much better it is than thte previous version. As a corollary, they cannot know what it’s bad at either. There are obvious problems in spending millions on dollars building something that you don’t know that it can and cannot do, and we’ll see if there’s really business model for this kind of statistical gambling.</p></li>
+<li><p>Question: what is the future and evolution of Claude Code Skills. Answer: “skills are pretty general, so there isn’t really an evolution to it”. I had never thought much about it, but skills are just markdown files with some plain-languages instructions (i.e. prompt fragments) and code; so, basically, LLMs were supposed to be a higher level than coding, which would handle the actual thing, but then we need “skills”, which are actually a user-specified layer above the LLM. Were coding for the LLM to code; in a way it kind of defeats most of the purpose of an LLM.</p></li>
+</ol>
+<p>Anyway, no huge conclusion or prediction for the future of the LLM business, of Anthropic, of Claude Code, of coding in general; just another data point, and it’s kind of refreshing that (some of) the inside looks better than the outside (except for the politics, not going there this time either).</p>
+
+        <code>
+        
+            -- caetano,
+         March  5, 2026
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Thu, 05 Mar 2026 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2026-03-04-anthropic-barcelona.html</guid>
+    <dc:creator>caesoma</dc:creator>
+</item>
+<item>
+    <title>Post Once, Syndicate Everywhere</title>
+    <link>https://caesoma.github.io/posts/2026-03-04-pose.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - Post Once, Syndicate Everywhere</title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>Post Once, Syndicate Everywhere</h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <p>Two things made me reactivate this blog. First, was the (re)discovery of RSS. I had used it for podcasting, not to be tied to a specific platform or player, but I thought RSS for text was dead like disco. I was reading a random blog and asked myself why they bothered, when I’d never remember to come back for the next post, when I saw they had a feed – next thought was “yeah, how I’m supposed to subscribe to that, <a href="https://en.wikipedia.org/wiki/Google_Reader">Google Reader</a> has been dead for years, and I don’t know if Feedly still exists”. A quick google search found me readers like <a href="https://www.inoreader.com/">Inoreader</a> and open source oneslike <a href="https://www.newsblur.com/">News Blur</a>.</p>
+<p>The second thing was listening to a Simon Willison, who publishes his own (ugly 90s geosites-style) <a href="https://simonwillison.net/">blog</a> and advocates for POSSE (or POSE): Post Own Site (Once), Syndicate Everywhere. I don’t always agree with his opinions on AI/LLMs, but he has some interesting opinions as the rare someone who’s not tryign to sell something AI-related. Also, he mentioned he just writes as an aexcercise of exposing ideas, or something like that. I think it’s may be a dangerous thing to stimulate everyone to do that (isn’t that what social media is?), but I guess the idea is to do long form posts in a format that is not perfectly crafted for algorithmic engagement.</p>
+<p>So, long story short, I decided to build an RSS feed into my old personal blog and try to write more often and syndicate it everywhere, se how that goes.</p>
+
+        <code>
+        
+            -- caetano,
+         March  4, 2026
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Wed, 04 Mar 2026 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2026-03-04-pose.html</guid>
+    <dc:creator>caesoma</dc:creator>
+</item>
+<item>
     <title>Luz no fim da 'imunidade de rebanho'?</title>
     <link>https://caesoma.github.io/posts/2020-07-16-imunidade-de-rebanho.html</link>
     <description><![CDATA[<!doctype html>
@@ -116,7 +311,7 @@ A gente discute essas ideias no <a href="https://ministeriodaciencia.github.io/p
 ]]></description>
     <pubDate>Mon, 20 Jul 2020 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2020-07-16-imunidade-de-rebanho.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Are we solving the most pressing scientific issues in mathematical modeling of Coronavirus? (for the most part no, we are not)</title>
@@ -220,7 +415,7 @@ projection of the rotten structures and incentives also seen in the society in g
 ]]></description>
     <pubDate>Sun, 14 Jun 2020 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2020-06-13-coronavirus.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>StanCon 2019 -- Multi-channel Gaussian Processes as flexible alternatives to linear models: perspectives and challenges to scaling up Bayesian inference to genomic-scale data</title>
@@ -350,7 +545,7 @@ This can also be written as \( k_{ij} = \sigma_f^{2} c_{ij} \), where \( c_{ij} 
 ]]></description>
     <pubDate>Thu, 01 Aug 2019 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2019-08-01-StanCon-gaussian-processes.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Random Interlude</title>
@@ -463,7 +658,7 @@ I’m probably waxing too philosophical at this point, so I’m going to leave i
 ]]></description>
     <pubDate>Sun, 30 Sep 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-09-30-random-interlude.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>On the journey of learning computer programming as a (natural) scientist</title>
@@ -597,7 +792,7 @@ I’ve come to a split where on the one hand I considered learning OOP for real,
 ]]></description>
     <pubDate>Mon, 30 Jul 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-07-28-programming-for-natural-scientists.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Multi-channel gaussian processes (part 2: mathematical description)</title>
@@ -734,7 +929,7 @@ Let me know if you have any more questions by commenting on the gist or via twit
 ]]></description>
     <pubDate>Mon, 28 May 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-05-28-multichannel-gaussian-processes-pt2.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Mathematical symbols and equations with MathJax rendering of LaTeX symbols</title>
@@ -834,7 +1029,7 @@ i \hbar \frac{\partial}{\partial t} \Psi (x,t) = -\frac{\hbar^2}{2m} \nabla^2 \P
 ]]></description>
     <pubDate>Thu, 17 May 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-05-17-mathjax-test.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Multi-channel gaussian processes (part 1: introduction)</title>
@@ -951,7 +1146,7 @@ This may (or may not) sound very fancy, so it’s important to remind yourself (
 ]]></description>
     <pubDate>Wed, 11 Apr 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-04-11-multichannel-gaussian-processes-pt1.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Many things in science are obsolete; trying to set one new standard will have it soon be so as well (a comment on 'The Scientific Paper Is Obsolete')</title>
@@ -1054,7 +1249,7 @@ Many of these are probably static for way more than 400 years; the <em>paper</em
 ]]></description>
     <pubDate>Mon, 09 Apr 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-04-09-not-just-the-scientific-paper-is-obsolete.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Model-based inference in experimental science</title>
@@ -1154,7 +1349,7 @@ It just may be a blog on the interface of different disciplines to try to approa
 ]]></description>
     <pubDate>Wed, 28 Mar 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-03-28-model-based-science.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 <item>
     <title>Introduction/Disclaimer</title>
@@ -1250,7 +1445,7 @@ The things written here can be broad or specific, philosophical or technical, th
 ]]></description>
     <pubDate>Thu, 22 Feb 2018 00:00:00 UT</pubDate>
     <guid>https://caesoma.github.io/posts/2018-02-22-introduction-disclaimer.html</guid>
-    <dc:creator>Caetano Souto Maior</dc:creator>
+    <dc:creator>caesoma</dc:creator>
 </item>
 
     </channel>
