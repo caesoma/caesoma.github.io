@@ -7,8 +7,109 @@
         <description><![CDATA[caesoma's rambling rss hakyll feed]]></description>
         <atom:link href="https://caesoma.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 05 Mar 2026 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Mar 2026 00:00:00 UT</lastBuildDate>
         <item>
+    <title>LMMs (Large Mathematics Models) a philosophical sci-fi thought experiment </title>
+    <link>https://caesoma.github.io/posts/2026-03-06-lmm-stats-science.html</link>
+    <description><![CDATA[<!doctype html>
+<html lang="en">
+    <head>
+        <script type="text/x-mathjax-config" src="../scripts/mathjax_conf.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML" async>
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>Hakyll Blog - LMMs (Large Mathematics Models) a philosophical sci-fi thought experiment </title> -->
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <header>
+        <!-- <div class="logo">
+            <a href="/">Hakyll Blog</a>
+        </div> -->
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="../">main</a></li>
+          <li><a href="../sciphi.html">sci-phi</a></li>
+          <li><a href="../publications.html">publications</a></li>
+          <li><a href="../archive.html">blog</a></li>
+        </ul>
+      </nav>    </header>
+    <body>
+        <main role="main">
+            <h1>LMMs (Large Mathematics Models) a philosophical sci-fi thought experiment </h1>
+            <article>
+    <section class="header">
+    </section>
+    <section>
+        <!--<img src="/images/image.png" class="full-width">
+
+![Alt text](URL-or-path-to-image "Optional title") -->
+<p>We’re being told everything will be automated by Large Language Models (LMMs), including things that are not natural language, like math and science, or even art (I’ll stick to my area of expertise, but there are probably many others).</p>
+<p>At the most fundamental level, I believe science is the final frontier, and <em>that</em> is not gonna be automated (anyone making that claim must present extraordinary evidence at the door); statistics won’t be automated either because it deals with data from the real world, and that has some of the same constraints – statistical models say something about real world phenomenon, and the real world is not computable (to anyone strongly disagreeing, extraorinary evidence, or go home).</p>
+<p>LLMs cannot automate math; even if they had a perfect manipulation of language and all written knowledge, math works differently, it has its own specific rules that cannot be captured by net-token prediction and attention to context mechanisms.
+Nevertheless, it’s plausible proofs could be automated by a Large Mathematics Model (LMM) – whether it’s actually possible is sci-fi, but I believe it to be achievable to some extent (Wolfram automates a lot of pure math, and LLMs can do some mathematical work, even if they’re not designed specifically for it).
+And yet, if proofs were automated, what then? A machine would prove all possible theorems? That would do no good to humanity, or robots.</p>
+<p>The interest in math is either (i) math itself, or (ii) how its applied, so it would be great to have a tool that helped prove obscure conjectures that had massive practical applications (I don’t think Navier-Stokes would affect my work, but if it was suddenly possible to to bayesian inference of particle filters analytically I’d go back to academia). For the the latter (ii) the applications would be obvious, but I’d still have to decide what to prove, or know what proof I’m looking for. In the former (i), I’d still have to conjecture things, and improve my understanding of math throuhgt the proof. No machine can do either of those for me, unless its a sentient being with its own desires and goals, and then we’re in sci-fi territory again.</p>
+<p>As much as I get satisfaction from it. I don’t think any physicist, mathematician, statistician, or quant in general thinks going through truckloads of pencils &amp; paper, chalk &amp; boards to get to any given proof is what math is about. To me, math is about representing the real world in a different langauge, or creating completely new things, both things for my own understanding, contemplation and wonder. A synthetic being may do that is some distant sci-fi future, but it will never be able to do it for me.</p>
+
+        <code>
+        
+            -- caesoma,
+         March  6, 2026
+        </code>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <ul>
+            <li><a href="https://substack.com/@caesoma">
+              <img src="../images/ss.png" alt="substack" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://orcid.org/0000-0002-0271-2576">
+              <img src="../images/id.png" alt="orcid" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://github.com/caesoma">
+              <img src="../images/gh.png" alt="github" style="width:42px;height:42px;border:0;">
+            </a></li>            
+            <li><a href="https://www.linkedin.com/in/caetanosoutomaior/">
+              <img src="../images/li.png" alt="linkedin" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a rel="me" href="https://mastodon.social/@caesoma">
+              <img src="../images/mt.png" alt="mastodon" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <!-- <li><a href="https://www.researchgate.net/profile/Caetano_Souto-Maior">
+              <img src="/images/rg.png" alt="researchgate" style="width:42px;height:42px;border:0;">
+            </a></li>
+            <li><a href="https://nih.academia.edu/CaetanoSoutoMaior">
+              <img src="/images/ac.png" alt="academia.edu" style="width:42px;height:42px;border:0;">
+            </a></li> -->
+        </ul>
+
+          <p>
+          <i>This page is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a>, which means its content can be reused and distributed, as long as it is also made available in that way, I think. You'd really have to read <a href="https://caesoma.github.io/LICENSE.md">the GPL license</a> and find out more <a href="https://choosealicense.com/">how this stuff works</a>.</i>
+          </p>
+          <p>
+          <i>created with</i> <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+          </p>
+          </footer>
+    </body>
+</html>
+]]></description>
+    <pubDate>Fri, 06 Mar 2026 00:00:00 UT</pubDate>
+    <guid>https://caesoma.github.io/posts/2026-03-06-lmm-stats-science.html</guid>
+    <dc:creator>caesoma</dc:creator>
+</item>
+<item>
     <title>Official Claude Barcelona event: Notes the opinions of an Anthropic egineer on the future of Claude Code.</title>
     <link>https://caesoma.github.io/posts/2026-03-04-anthropic-barcelona.html</link>
     <description><![CDATA[<!doctype html>
